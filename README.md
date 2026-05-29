@@ -1,7 +1,9 @@
 # LANCER: Reditus Company Expansion
 <br>
+<br>
+<br>
 
-## About
+## About (Lore)
 Reditus Technology Corporation (RTC) is a recently-established megacorporation with a focus on inventing new technology and innovating new technological advancements for the betterment of humanity. Their products are designed for general use amongst the population, whether they be Union or not.
 
 While smaller than the other, more established manufacturers, RTC prides itself on quality and ensuring the widespread adoption of its advancements in technology. To achieve this, RTC has aggressively pushed for adoption of its recent developments among regional system governments, mainly within the Diaspora, where high quality equipment at affordable prices is needed the most.
@@ -15,6 +17,14 @@ RTC is continually expanding at a rapid pace, with an aim to make the galaxy nea
 <br>
 <br>
 <br>
+<br>
+<br>
+
+## About (Project)
+The project in the current state is a <b>Prototype</b>, meaning it is actively being developed and fine-tuned based on feedback we get. Whenever a minor bug fix version is released, it will be released here so as to not flood the main project page. Whenever a major or minor version is released, it will be released both here and on the main project page over on [Itch.io](https://duo-rr.itch.io/lancer-reditus-company-expansion).
+<br>
+
+You are free to post feedback on anywhere where we can see it such as here in [Issues](https://github.com/DUO-R-R/LANCER-Reditus-Company-Expansion/issues), on the [Itch.io](https://duo-rr.itch.io/lancer-reditus-company-expansion) page under comments, or by directly contacting us on [Discord](https://discord.com), <b>@reastrile</b> or <b>@mentor_knight</b>.
 <br>
 <br>
 
