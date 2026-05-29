@@ -1,5 +1,6 @@
 # LANCER: Reditus Company Expansion
 <br>
+
 ## About
 Reditus Technology Corporation (RTC) is a recently-established megacorporation with a focus on inventing new technology and innovating new technological advancements for the betterment of humanity. Their products are designed for general use amongst the population, whether they be Union or not.
 
@@ -16,6 +17,7 @@ RTC is continually expanding at a rapid pace, with an aim to make the galaxy nea
 <br>
 <br>
 <br>
+
 ## Contributors
 <table>
 	<tbody>
