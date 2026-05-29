@@ -1,0 +1,258 @@
+[
+  {
+    "id": "rce-talents_cyberoptical",
+    "name": "Cyberoptic",
+    "terse": "Its time for true improvements to your mech's optical and range-based systems.",
+    "description": "Improving a mech's systems relating to sensors and optics are important for battlefield awareness and hacking capabilities. Improving them can help give a massive boost to a mech's capabilities at longer ranges as well as making an already deadly mech even more so.",
+    "ranks": [
+      {
+        "name": "Visionary",
+        "description": "Improve the Sensor range by 3",
+        "bonuses": [
+          {
+            "id": "sensor",
+            "val": 3
+          }
+        ]
+      },
+      {
+        "name": "R-F Boosting",
+        "description": "An improvement to your mech's range finding systems increases the range of range-based weapons by 2.",
+        "bonuses": [
+          {
+            "id": "range",
+            "val": 2,
+            "damage_types": ["Kinetic","Energy","Heat","Explosive","Burn","Variable"],
+            "range_types": ["Range"],
+            "weapon_types": ["Cannon","Rifle","Launcher","Nexus","CQB"],
+            "weapon_sizes": ["Auxiliary","Main","Heavy","Superheavy"]
+          }
+        ]
+      },
+      {
+        "name": "Mechaoptics",
+        "description": "The ultimate upgrade to further improve the mech's Sensor range by 3 and increase the range of ranged-based weapons by 1.",
+        "bonuses": [
+          {
+            "id": "sensor",
+            "val": 5
+          },
+          {
+            "id": "range",
+            "val": 3,
+            "damage_types": ["Energy","Explosive","Kinetic","Heat","Burn","Variable"],
+            "range_types": ["Range","Threat","Line"],
+            "weapon_types": ["Rifle","Cannon","Launcher","CQB","Nexus"],
+            "weapon_sizes": ["Auxiliary","Main","Heavy","Superheavy"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rce-talents_biofreak",
+    "name": "Bio-Freak",
+    "terse": "Biology is amazing, and harnessing it can be just as deadly as mechanized warfare.",
+    "description": "Biological warfare can be just as deadly as mechanized warfare, and at times, even deadlier. It is time you harnessed the power of biology to show people that while they may be part cyber, they are still biological.",
+    "ranks": [
+      {
+        "name": "Biocripple",
+        "description": "1/Round, whenever you hit an attack with a melee weapon, you may choose to use <strong>Biocripple </strong>as a reaction.",
+        "actions": [
+          {
+            "name": "Biocripple",
+            "activation": "Reaction",
+            "detail": "The Target becomes <strong>Slowed</strong> and <strong>Impaired</strong> until the end of their next turn.",
+            "frequency": "1/round",
+            "trigger": "Hit a character with a melee attack."
+          }
+        ]
+      },
+      {
+        "name": "Pathogenesis",
+        "description": "Your knack for offensive biological warfare has expanded and you gain <strong>Pilinject</strong> and <strong>Biotorment</strong> as quick actions.",
+        "actions": [
+          {
+            "name": "Pilinject",
+            "activation": "Quick",
+            "detail": "2/Scene, choose any biological entity (including hostile pilots) that are not inside a mech (they have their biological self exposed) and within range. You shoot out an injection that rapidly spreads within their body. This pathogen attempts to hijack the Target and they gain the <strong>Pathoparalysis</strong> Status.",
+            "range": [{"type": "Range","val": 8}],
+            "frequency": "Unlimited"
+          },
+          {
+            "name": "Biotorment",
+            "activation": "Full",
+            "detail": "Choose any biological entity (including hostile pilots) that are not inside a mech (they have their biological self exposed) and within Sensor range. Your mech sends out a frequency that torments the Target who immediately becomes <strong>Impaired</strong> until they subsequently leave your Sensor range, after which this effect stops.",
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Pathological Harbinger",
+        "description": "Your knack for tormenting biological entities has reached a peak, you now gain <strong>Pathoparalysis Mine</strong> to be used as well as gaining <strong>Reactive Biotorment</strong> as a reaction.",
+        "actions": [
+          {
+            "name": "Reactive Biotorment",
+            "activation": "Reaction",
+            "detail": "Your mech sends out a frequency that torments your Target who immediately becomes <strong>Impaired</strong> until they subsequently leave your Sensor range, after which this effect stops.",
+            "frequency": "1/round",
+            "trigger": "A hostile character moves within Sensor range."
+          }
+        ],
+        "integrated": [
+          "rce-systems_pathoparalysismine"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "id": "rce-talents_cruelty",
+    "name": "Cruelty",
+    "terse": "In this galaxy, it is those who are cruel that survive the longest.",
+    "description": "Your cruelty knows no limits, morality is out of the question. All that matters is that you survive. Showcase your cruelty so that no one may question whether or not your life is worth it.",
+    "ranks": [
+      {
+        "name": "Callous ",
+        "description": "You have emotionally hardened yourself, the first step down the path. While not malicious, you experience indifference and gain a +1 Accuracy to any social checks and saves that would affect you emotionally."
+      },
+      {
+        "name": "Merciless",
+        "description": "Your indifference to life has further developed into anger and malice. Your morality is slipping. You gain the <strong>Rip Cockpit</strong> full action and <strong>Reckless</strong> <strong>Swipe</strong> reaction.",
+        "actions": [
+          {
+            "name": "Rip Cockpit",
+            "activation": "Full",
+            "detail": "You can attempt to rip open the cockpit of an adjacent character. Your Target must succeed on a Hull save or the pilot of said mech is forced to immediately Dismount their mech.",
+            "frequency": "Unlimited"
+          },
+          {
+            "name": "Reckless Swipe",
+            "activation": "Reaction",
+            "detail": "You may attack your Target with any melee weapon. However, any adjacent character will also be hit by this attack.",
+            "frequency": "1/round",
+            "trigger": "A character comes within Threat of a melee weapon."
+          }
+        ]
+      },
+      {
+        "name": "Sadistic",
+        "description": "Your malice has now progressed to sadism. Morality is no longer holding you back in what you feel is justified. You gain <strong>Play Thing</strong> and <strong>Mental Anguish</strong> as full actions.",
+        "actions": [
+          {
+            "name": "Play Thing",
+            "activation": "Full",
+            "detail": "Mark a Target with the <strong>Play Thing</strong> Status. Only one Target may have this status at any moment.",
+            "frequency": "Unlimited"
+          },
+          {
+            "name": "Mental Anguish",
+            "activation": "Full",
+            "detail": "You admit an aura of anguish in a Burst 2 area on you. All biological characters in the zone must pass a <strong>Stay Cool</strong> or equivalent save (including pilots inside mechs). Upon failure, the biological entity is forced to attack a random character other than you immediately if possible (pilots inside mechs will have their mechs perform this action). ",
+            "frequency": "Unlimited"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rce-talents_exetechnocrat",
+    "name": "Exetechnocrat",
+    "terse": "Your expertise with technology surpasses most, rather than be selfish though, you learned that helping others is the best way to survive.",
+    "description": "Your expertise with technology is among the best and others will recognize this. You have learned ways to remotely improve the systems of friends, helping others out of situations. If they survive, your odds of survival go up as well.",
+    "ranks": [
+      {
+        "name": "Selfless Coolant Expert",
+        "description": "You have figured out how to remote into the mechs of your allies to aid in keeping things efficient and cool. You gain <strong>Remote Cooling</strong> as a full action.",
+        "actions": [
+          {
+            "name": "Remote Cooling",
+            "activation": "Full",
+            "detail": "3/Scene, you may choose an ally as a Target who is in the Danger Zone and within Sensor range. Your Target has their Heat cleared, however, they effectively remain in the Danger Zone and become Impaired until the end of their next turn.",
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Sensibility",
+        "description": "You have figured out how to temporarily improve the optical and sensor systems of your allies, at a trade off. You gain the <strong>Charity Sensor</strong> and <strong>Remote Range Finder</strong> as quick actions.",
+        "actions": [
+          {
+            "name": "Charity Sensor",
+            "activation": "Quick",
+            "detail": "You may choose an ally as a Target within Sensor range. You make a sensor link to your Target. This link remains active until you use a quick action to close the link. Additionally, the link will automatically close if you or your Target are not within your Target's Sensor range. While the link is active, your Target may now use you and your Sensor range for tech attacks. However, you cannot make tech attacks.<br><br>Only one link can be active at any moment.",
+            "frequency": "Unlimited"
+          },
+          {
+            "name": "Remote Range Finder",
+            "activation": "Quick",
+            "detail": "You may choose an ally as a Target within Sensor range. Until the end of their next turn, all ranged-based weapons get a +3 to their range and +1 to their threat. However, any attacks that are made that are beyond the corresponding weapon's base range or threat is made with a +1 Difficulty.",
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Reactomaniac",
+        "description": "Stress is a resource and you have figured out a way to use it.",
+        "actions": [
+          {
+            "name": "Activate Reactomaniac",
+            "activation": "Full",
+            "detail": "1/Scene, you can trigger a special charge to your reactor. All ally characters within Burst 3 of you gain an additional quick action on their next turn. For every ally you hit with this, you take 3 Heat. If you hit at least 3 allies, you additionally take 1 Stress even if the previous Heat damage caused Stress.",
+            "frequency": "Unlimited"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rce-talents_autotechnocrat",
+    "name": "Autotechnocrat",
+    "terse": "Your expertise with technology surpasses most, but you know that being too selfless leaves you exposed.",
+    "description": "Your expertise with technology is among the best and others will recognize this. You have learned ways to better your mech's systems on the fly to adapt to situations as needed. You know that sometimes the best are the ones that survive.",
+    "ranks": [
+      {
+        "name": "Coolant Expert",
+        "description": "You have figured out a dangerous but effective method of keeping things efficient and cool in your own mech. You gain <strong>Coolant Dump</strong> as a quick action.",
+        "actions": [
+          {
+            "name": "Coolant Dump",
+            "activation": "Quick",
+            "detail": "3/Scene, if you are in the Danger Zone, you can clear all of your current Heat. However, you must pass an Engineering save. If you fail this save, you will immediately take Energy damage equal to the amount of Heat cleared and become Impaired until the end of your next turn.",
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Sensicrack",
+        "description": "You have figured out how to use the sensors of those who face you against them. You gain the <strong>Commandeer Sensors</strong> and <strong>Threat Reduction</strong> as invade options.",
+        "actions": [
+          {
+            "name": "Commandeer Sensors",
+            "activation": "Invade",
+            "detail": "You make a sensor link to your Target. So long as you remain within Sensor range of your Target, this link remains active. This link automatically closes when you or your Target move farther than your Sensor range or either your mech or your Target's mech is Shut Down, or is eliminated.<br><br>While this link is active, you may use your Target's Sensor range for your tech attacks. If you make a tech attack using their Sensor range, you take 1 Heat.<br><br>Only one link can be active at any moment.",
+            "frequency": "Unlimited"
+          },
+          {
+            "name": "Thread Reduction",
+            "activation": "Invade",
+            "detail": "Your Target will have no Threat on any weapon until the end of their next turn. This effectively means they cannot make Overwatch reactions with any weapon.<br>When you hit with this invade, you take 2 Heat.",
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Nuclear Maniac",
+        "description": "",
+        "actions": [
+          {
+            "name": "Activate Nuclear Maniac",
+            "activation": "Full",
+            "detail": "1/Scene, you can trigger a special charge to your reactor. All hostile characters within Burst 3 of you must succeed on an Engineering save or immediately take 2 Heat and become <strong>Exposed</strong>. For every character you hit with this, you take 3 Heat. If you hit at least 3 characters, you additionally take 1 Stress even if the previous Heat damage caused Stress.",
+            "frequency": "Unlimited"
+          }
+        ]
+      }
+    ]
+  }
+]
