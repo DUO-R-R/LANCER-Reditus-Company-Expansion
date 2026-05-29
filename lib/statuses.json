@@ -1,0 +1,33 @@
+[
+  {
+    "id": "rce-effects_status_bleed",
+    "name": "Bleed",
+    "type": "Status",
+    "exclusive": "Pilot",
+    "terse": "You have suffered wounds deep enough that you are now bleeding out, you must do something.",
+    "effects": "Only biological entities can suffer from this Status.<br><br>The Target takes 1d3-1 Kinetic damage at the start of their turn until they or an adjacent ally of the Target successfully pass a <strong>Patch</strong> or similar skill check."
+  },
+  {
+    "id": "rce-effects_status_poison",
+    "name": "Poison",
+    "type": "Status",
+    "exclusive": "Pilot",
+    "terse": "You have taken something into your body either knowingly or unknowingly and now the rejection is happening.",
+    "effects": "Only biological entities can suffer from this Status.<br><br>The Target has their maximum HP halved, rounded down. Additionally, the Target takes 1 Kinetic damage at the start of their turn unless they are at 1 HP.<br/>This effect persists until the Target or an adjacent ally of the Target successfully pass a <strong>Patch</strong> or similar skill check."
+  },
+  {
+    "id": "rce-effects_status_pathoparalysis",
+    "name": "Pathoparalysis",
+    "type": "Status",
+    "exclusive": "Pilot",
+    "terse": "Something feels off, something is trying to take you over.",
+    "effects": "Only biological entities can suffer from this Status.<br><br>At the start of each turn, the Target must make a <strong>Patch</strong> or similar skill check. So long as this check keeps passing, nothing happens.<br/>Once the check fails, the Target immediately becomes <strong>Immobilized</strong> and <strong>Impaired</strong>. Now at the start of each turn, the Target or an adjacent ally to the target must pass a <strong>Patch</strong> or similar skill check or the Target will remain <strong>Immobilized</strong> and <strong>Impaired</strong> for the turn. Once this check passes, this status is removed."
+  },
+  {
+    "id": "rce-effects_status_plaything",
+    "name": "Play Thing",
+    "type": "Status",
+    "terse": "A disturbing presence nags at you. Your being targeted, your being hunted, you are being played with.",
+    "effects": "When you first gain this Status, you will have a +1 Difficulty to all attack rolls. For every attack you make, this Difficulty increases by +1 up to a maximum of +5. Every turn you take where you do not attack, the Difficulty goes down by 1 (-1) down to a minimum of +1.<br><br>This Status is removed upon death of you or whoever gave this Status."
+  }
+]
