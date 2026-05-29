@@ -1,0 +1,926 @@
+[
+  {
+    "id": "rce-pilotgear_gear_chronotarduscyberneticimplant",
+    "name": "Chronotardus Cybernetic Implant",
+    "type": "Gear",
+    "description": "An advanced cybernetic implant designed to allow the user to react to situations easier by increasing the amount of information that the user's brain can process by having a separate dedicated chip to process information immediately in parallel with the brain. This gives the user an edge in time-sensitive moments by increasing capacity for information intake.",
+    "effect": "All skill checks related to time-sensitive actions can be re-rolled. However, the new roll must be kept.",
+    "actions": [
+      {
+        "name": "Activate Chronotardus Cybernetic Implant",
+        "activation": "Reaction",
+        "detail": "Reroll the failed time-based skill check from the user.",
+        "pilot": true,
+        "frequency": "Unlimited",
+        "trigger": "A time-based skill check from the user fails."
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_weapon_mantiblades",
+    "name": "Mantiblades",
+    "type": "Weapon",
+    "description": "The standard developed Mantiblades. A set of blades that are embedded into the forearms of the user that can extend outwards, mimicking the style of the ancient praying mantis insectoid found on <strong>Cradle</strong>.",
+    "damage": [{"type": "Kinetic","val": 2}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_charges","val": 2}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_flamingmantiblades",
+    "name": "Flaming Mantiblades",
+    "type": "Weapon",
+    "description": "The Flaming Mantiblades, also referred to Model F Mantiblades, are a modified version of the standard issued Mantiblades by <strong>RTC</strong>. The modifications allow for the blades to be set ablaze when extended from the user's forearms to burn its victims.",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 5+, the Target also takes 1 Burn damage.",
+    "damage": [{"type": "Kinetic","val": 2}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_extendedmantiblades",
+    "name": "Extended Mantiblades",
+    "type": "Weapon",
+    "description": "The Extended Mantiblades, also referred to Model L Mantiblades, are a modified version of the standard issued Mantiblades by <strong>RTC</strong>. The modifications allow for additional extension by the blades in exchange for a deeper embedding into the user's forearm. The surgical needs to allow for this modified version makes it more difficult to deal as much damage as the standard blades, but allows for a longer reach.",
+    "damage": [{"type": "Kinetic","val": 1}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_energymantiblades",
+    "name": "Energy Mantiblades",
+    "type": "Weapon",
+    "description": "The Energy Mantiblades, also referred to Model E Mantiblades, are a modified version of the standard issued Mantiblades by <strong>RTC</strong>. The modifications allow for the blades to charge up while extended to subsequently expel into its victims.",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 5+, the Target also takes 1 Energy damage.",
+    "range": [{"type": "Range","val": 1}],
+    "damage": [{"type": "Kinetic","val": 2}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_dynamantiblades",
+    "name": "Dyna Mantiblades",
+    "type": "Weapon",
+    "description": "The Dyna Mantiblades, also referred to Model D Mantiblades, are a modified version of the standard issued Mantiblades by <strong>RTC</strong>. The modifications allow for the blades to store explosive charges, though this modifications makes the blades more dangerous to the user and makes the blades less effective without the explosives.",
+    "effect": "<strong>On Hit:</strong> You may choose to expend a charge to deal an additional 1d4 Explosive damage, this roll is treated as <strong>Overkill</strong> and as such any time a 1 is rolled, the user takes 1 Explosive damage and damage is re-rolled.",
+    "damage": [{"type": "Kinetic","val": 1}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "tg_overkill"}, {"id": "tg_limited","val": 3}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_rtcrailgun",
+    "name": "RTC Railgun",
+    "type": "Weapon",
+    "description": "An experimental charged railgun developed by <strong>RTC</strong>.",
+    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, <span>this weapon also takes up 1 gear slot.</span>",
+    "damage": [{"type": "Kinetic","val": "1d3+1"}],
+    "range": [{"type": "Line","val": 10}, {"type": "Threat","val": 4}],
+    "tags": [{"id": "tg_ap"}, {"id": "rge-tags_charges","val": 2}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_crossbow",
+    "name": "Crossbow",
+    "type": "Weapon",
+    "description": "The standard energy-based crossbow. Unlike ancient crossbows from Cradle, this crossbow is energy based but is still relatively slow.",
+    "damage": [{"type": "Energy","val": "1d3-1"}],
+    "range": [{"type": "Range","val": 7}, {"type": "Threat","val": 3}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_reliable","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_repeatercrossbow",
+    "name": "Repeater Crossbow",
+    "type": "Weapon",
+    "description": "The Repeating Crossbow developed by <strong>RTC</strong>, also referred to as the Model R Crossbow. This model has had its energy output reduced in favor of a faster fire rate.",
+    "damage": [{"type": "Energy","val": 1}],
+    "range": [{"type": "Range","val": 7}, {"type": "Threat","val": 3}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "tg_ap"}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_impactcrossbow",
+    "name": "Impact Crossbow",
+    "type": "Weapon",
+    "description": "The Impact Crossbow developed by <strong>RTC</strong>, also referred to as the Model I Crossbow. This model has had its energy output increased, increasing both its damage and range. However, its speed is negatively impacted, requiring a longer time to charge.",
+    "damage": [{"type": "Energy","val": "1d3"}],
+    "range": [{"type": "Range","val": 10}, {"type": "Threat","val": 4}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_reliable","val": 1}, {"id": "rge-tags_charges","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_explosivecrossbow",
+    "name": "Explosive Crossbow",
+    "type": "Weapon",
+    "description": "Unlike the previous models of the Crossbow, the Explosive Crossbow is modified to not be energy based. Also referred to as the Model E Crossbow, this model trades out the traditional energy-based propulsion for the traditional ancient methods of propelling a crossbolt. However, the bolts this model fires are laced with explosives that detonate on impact. This modification while massively increasing the potentional damage, means that it is slow to reload and has a reduced range.",
+    "damage": [{"type": "Explosive","val": "1d6"}],
+    "range": [{"type": "Range","val": 5}, {"type": "Threat","val": 2}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_reliable","val": 1}, {"id": "rge-tags_charges","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_mantibladesmkii",
+    "name": "Mantiblades Mk.II",
+    "type": "Weapon",
+    "description": "An upgrade to the standard Mantiblades developed by <strong>RTC</strong>. A set of blades that are embedded into the forearms of the user that can extend outwards, mimicking the style of the ancient praying mantis insectoid found on <strong>Cradle</strong>. The Mantiblades Mk.II feature a more jagged design to increase the severity of wounds delivered to victims.",
+    "effect": "<strong>On Hit: </strong>The Target must succeed on an agility save or <strong>Bleed</strong> is applied to them.",
+    "damage": [{"type": "Kinetic","val": 2}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_bleed"}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_extendedmantibladesmkii",
+    "name": "Extended Mantiblades Mk.II",
+    "description": "The Extended Mantiblades Mk.II, an upgrade from the original Extended Mantiblades. The Mk.II has now dealt with the drawback of the original version by using robotics and cybernetics within the user's arm to give the original strength of the user back to them, and in some cases making the user slighter stronger. This allows for the same damage output as the standard Mantiblades and the extended range of the Extended Mantiblades.",
+    "type": "Weapon",
+    "damage": [{"type": "Kinetic","val": 2}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_gear_calcisteelcyberneticimplant",
+    "name": "Calcisteel Cybernetic Implant",
+    "type": "Gear",
+    "description": "An experimental cybernetic implant designed to increase the bone density of specific sections of a user as well as promoting muscle growth in the section to support the bones. The user can get this implant in their arms to increase the effectiveness of melee weapons, their legs to increase their endurance to running or falling, or their chest to effectively act as biological armor.",
+    "effect": "The user can choose where these modifications are with the following effects:<br/><strong>Arms:</strong> Melee weapons get a bonus +1 Kinetic damage.<br/><strong>Legs:</strong> The user's speed gets a +1 bonus and fall damage is halved.<br/><strong>Torso:</strong> The user gets +2 HP."
+  },
+  {
+    "id": "rce-pilotgear_gear_biohudcyberneticimplant",
+    "name": "Bio-H.U.D Cybernetic Implact",
+    "type": "Gear",
+    "description": "Rather than requiring a piece of headgear, a user can choose to get this cybernetic implant into their brain to give a natural H.U.D projected into their vision when they want. This allows for better battlefield awareness as well as providing improved vision in darkness, heat vision, and other features. The user must be careful though as a drawback is that this implant can be hacked to effectively mess with their vision."
+  },
+  {
+    "id": "rce-pilotgear_gear_mechalenzcyberneticimplant",
+    "name": "Mechalenz Cybernetic Implant",
+    "type": "Gear",
+    "description": "A cybernetic implant designed to replace one or both eyes of a user to increase the distance at which the user can make out detail, give heat vision, and give night vision."
+  },
+  {
+    "id": "rce-pilotgear_gear_regenativeskinbiomodification",
+    "name": "Regenative Skin Biomodification",
+    "type": "Gear",
+    "description": "A biomodification designed to improve the body's ability to heal minor injuries/wounds.",
+    "effect": "Whenever you take any form of damage that is less than or equal to 25% of your maximum HP, you may choose to expend a charge to completely heal the damage taken.",
+    "tags": [{"id": "tg_limited","val": 2}]
+  },
+  {
+    "id": "rce-pilotgear_gear_oxicircaflowbiomodification",
+    "name": "Oxicirca-Flow Biomodification",
+    "type": "Gear",
+    "description": "A biomodification designed to increase the amount of oxygen that the user's blood can carry throughout their body, improving muscle performance.",
+    "effect": "Increase the user's Speed by 2 and Evasion by 1.",
+    "bonuses": [{"id": "pilot_speed","val": 2}, {"id": "pilot_evasion","val": 1}]
+  },
+  {
+    "id": "rce-pilotgear_gear_nanimmunocyberneticimplant",
+    "name": "Nanimmuno Cybernetic Implant",
+    "type": "Gear",
+    "description": "A cybernetic implant designed to aid in the user's immune response. Whenever the implant detects the body's natural immune response responding to a foreign object, the implant floods the body with nanites that follow the response to the foreign objects and work with the body to eliminate the threat, effectively making the user fully immune to all known and unknown diseases so long as the swarm is able to be deployed.<br><br>Without the swarm, the body has to rely soley on its own response, though immunity is still developed to any diseases fought off with the swarm."
+  },
+  {
+    "id": "rce-pilotgear_gear_regenateloproteinbiomodification",
+    "name": "Regenatelo Protein Biomodification",
+    "type": "Gear",
+    "description": "A biomodification designed to be injected into the cells of the users. The injection allows the cells to create new proteins that repair the telomeres at the end of the cell's DNA. This effectively stops the users current natural aging processes and helps to reverse some current negative effects of aging."
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcexoskeleton",
+    "name": "RTC Exoskeleton",
+    "type": "Armor",
+    "description": "The standard Exoskeleton designed by <strong>RTC</strong>. The standard Exoskeleton is designed to aid in user movement and provide some protection for the user.",
+    "bonuses": [{"id": "pilot_armor","val": 1,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_evasion","val": 8,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcevasiveexoskeleton",
+    "name": "RTC Evasive Exoskeleton",
+    "type": "Armor",
+    "description": "The Evasive Exoskeleton designed by <strong>RTC</strong>, also referred to as the Model E Exoskeleton. The Evasive Exoskeleton is designed to further aid in user movement by making movement much easier, easier than without the skeleton. The improved movement comes at the cost of less protection to the user if they are to be hit.",
+    "bonuses": [{"id": "pilot_evasion","val": 12,"replace": true}, {"id": "pilot_speed","val": 6,"replace": true}, {"id": "pilot_edef","val": 8,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcarmoredexoskeleton",
+    "name": "RTC Armored Exoskeleton",
+    "type": "Armor",
+    "description": "The Armored Exoskeleton designed by <strong>RTC</strong>, also referred to as the Model A Exoskeleton. The Armored Exoskeleton is designed to protect the user from hits at the cost of movement.",
+    "bonuses": [{"id": "pilot_armor","val": 4,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_evasion","val": 6,"replace": true}, {"id": "pilot_speed","val": 3,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcmechpilotsuit",
+    "name": "RTC Mech Pilot Suit",
+    "type": "Armor",
+    "description": "An advanced suit designed for use by mech pilots by <strong>RTC</strong>. The Mech Suit is designed to allow mech pilots to be comfortable while piloting mechs in battle, but also offer some protection should their mech be rendered inoperable during combat.",
+    "bonuses": [{"id": "pilot_armor","val": 1,"replace": true}, {"id": "pilot_evasion","val": 10,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}, {"id": "pilot_hp","val": 3,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcmechanicsuit",
+    "name": "Mechanic Suit",
+    "type": "Armor",
+    "description": "A standard suit designed for mechanics. The Mechanic Suit is designed for practical use by mechanics and offers minor physical protection in favor of other forms of protection. Along with being light enough to not hamper movement in evacuation scenarios.",
+    "bonuses": [{"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_armor","val": 1,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtchologramsuit",
+    "name": "RTC Hologram Suit",
+    "type": "Armor",
+    "description": "An advanced suit designed for infiltration and/or stealth operations by <strong>RTC</strong>. The suit comes with cloaking capabilities as well as a hologram unit that activates should the user be discovered and attacked. Due to the added capabilities though, the suit is not exactly light and hampers the overall speed of the user.",
+    "effect": "<strong>User Hologram:</strong> Reaction to deploy can be taken when the user is hit by an attack. This subsequently deactivates the cloak.",
+    "bonuses": [{"id": "pilot_evasion","val": 5,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_speed","val": 3,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}],
+    "actions": [
+      {
+        "name": "Activate/Deactivate Cloak",
+        "activation": "Quick",
+        "detail": "Activate or deactivate the cloak of the suit to allow the user to be invisible. However, while the cloak is active, any holograms will automatically be recalled.<br>The cloak will immediately deactivate when the user takes damage.",
+        "pilot": true,
+        "frequency": "Unlimited"
+      }
+    ],
+    "deployables": [
+      {
+        "name": "User Hologram",
+        "type": "Hologram",
+        "detail": "A small hologram of the user the hologram is assigned to.<br><br>Any hostile characters within the Sensor Range must target this hologram instead of the original user.",
+        "size": 0.5,
+        "activation": "Reaction",
+        "deactivation": "Quick",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "10",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "20",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": true,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_armor_reactivesuit",
+    "name": "Reactive Suit",
+    "type": "Armor",
+    "description": "An advanced suit designed to automatically react for the user to incoming damage. When the suit detects incoming damage, it will attempt to move the user out of the way of the incoming attack.",
+    "bonuses": [{"id": "pilot_evasion","val": 15,"replace": true}, {"id": "pilot_edef","val": 6,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}]
+  },
+  {
+    "id": "rce-pilotgear_armor_trainingsuit",
+    "name": "Training Suit",
+    "type": "Armor",
+    "description": "A standard issued suit meant for basic training purposes.",
+    "bonuses": [{"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_edef","val": 8,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcheatsuit",
+    "name": "RTC Heat Suit",
+    "type": "Armor",
+    "description": "An advanced suit designed by <strong>RTC</strong> to better resist heat. The suit comes with capabilities to automatically cool off the user or extinguish flames.",
+    "bonuses": [{"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}],
+    "actions": [
+      {
+        "name": "Extinguish Flames",
+        "activation": "Reaction",
+        "detail": "The damage is halved, rounded down; additionally the damage is treated as Kinetic.",
+        "pilot": true,
+        "frequency": "Unlimited",
+        "trigger": "User takes any Heat or Burn damage."
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_weapon_impactcrossbowmkii",
+    "name": "Impact Crossbow Mk.II",
+    "type": "Weapon",
+    "description": "The Impact Crossbow Mk.II developed by <strong>RTC</strong>, also referred to as the Model I.2 Crossbow. The Mk.II of the Impact Crossbow features a significantly higher energy output to deal more damage and increase its range. The longer charge time drawback is still around.",
+    "damage": [{"type": "Energy","val": "2d3"}],
+    "range": [{"type": "Range","val": 12}, {"type": "Threat","val": 4}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_reliable","val": 1}, {"id": "rge-tags_charges","val": 1}, {"id": "rge-tags_clearance","val": 4}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_impactcrossbowmkiii",
+    "name": "Impact Crossbow Mk.III",
+    "type": "Weapon",
+    "description": "The Impact Crossbow Mk.III developed by <strong>RTC</strong>, also referred to as the Model I.3 Crossbow. The Mk.III of the Impact Crossbow features a built in energy storage unit to hold more charges for the user. These charges can be expelled all at once for increased damage.",
+    "effect": "The charges on this weapon can either be used one at a time, or be fired all at once for multiple attacks on a single target or multiple targets.<br><br>If the option to expel all charges at once is taken, the crossbow must be fully recharged before it can be fired again for any reason.",
+    "damage": [{"type": "Energy","val": "2d3"}],
+    "range": [{"type": "Range","val": 12}, {"type": "Threat","val": 4}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_reliable","val": 1}, {"id": "rge-tags_charges","val": 3}, {"id": "rge-tags_clearance","val": 7}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_rtcrailgunmkii",
+    "name": "RTC Railgun Mk.II",
+    "type": "Weapon",
+    "description": "The Mk.II of the experimental railgun developed by <strong>RTC</strong>. The Mk.II model features a higher base charge capacity and increased range.",
+    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, <span>this weapon also takes up 1 gear slot.</span>",
+    "damage": [{"type": "Kinetic","val": "1d3+1"}],
+    "range": [{"type": "Line","val": 15}, {"type": "Threat","val": 5}],
+    "tags": [{"id": "tg_ap"}, {"id": "rge-tags_clearance","val": 4}, {"id": "rge-tags_charges","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_rtcrailgunmkiii",
+    "name": "RTC Railgun Mk.III",
+    "type": "Weapon",
+    "description": "The Mk.III of the experimental railgun developed by <strong>RTC</strong>. The Mk.III model features experimental ammo that can be accelerated to a higher velocity and dish out a bigger punch.",
+    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, <span>this weapon also takes up 1 gear slot.</span><br><br><br><strong>On Hit: </strong>The Target must succeed on an agility save or become <strong>Shredded</strong>.",
+    "damage": [{"type": "Kinetic","val": "2d3"}],
+    "range": [{"type": "Line","val": 15}, {"type": "Threat","val": 5}],
+    "tags": [{"id": "tg_ap"}, {"id": "rge-tags_clearance","val": 7}, {"id": "rge-tags_charges","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_gear_necroticreanimator",
+    "name": "Necrotic Reanimator",
+    "type": "Gear",
+    "description": "An experimental piece of technology developed by <strong>RTC</strong> that has been classified and scrapped due to moral and ethical concerns within the company. The gear is a small set of nanites that hijack the tissue and nervous system of a dead biological entity. The hijacking allows for crude control of the victim.",
+    "effect": "The user may choose a single dead biological entity as a Target to take over. The Target is essentially brought back to life under the control of the user. However, due to the fact that the control is crude and the entity is dead, all of the original stats are halved. <br><br>The Target can also only use its standard movement and is restricted to a single quick action instead of a full action.",
+    "tags": [{"id": "tg_limited","val": 1}, {"id": "rge-tags_clearance","val": 5}]
+  },
+  {
+    "id": "rce-pilotgear_gear_jackingmemoryprobe",
+    "name": "Jacking Memory Probe",
+    "type": "Gear",
+    "description": "A portable handheld device that can be hooked up to a person who has had a jack port installed into their head. The Jacking Memory Probe (JMP) is designed to plug into most standard jack ports to read off the memories of the given user and store them for playback."
+  },
+  {
+    "id": "rce-pilotgear_weapon_extendedmantibladesmkiii",
+    "name": "Extended Mantiblades Mk.III",
+    "type": "Weapon",
+    "description": "The Extended Mantiblades Mk.III, a further upgrade from the Extended Mantiblades Mk.III. With improved range and more advanced cybernetically enhanced muscles, the Extended Mantiblades Mk.III are now more deadly. The more jagged edge design from the Mantiblades Mk.II are also featured in this design.",
+    "effect": "<strong>On Hit: </strong>The Target must succeed on an agility save or <strong>Bleed</strong> is applied to them.",
+    "damage": [{"type": "Kinetic","val": 3}],
+    "range": [{"type": "Range","val": 3}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 6}, {"id": "rge-tags_bleed"}, {"id": "tg_ap"}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_mantibladesmkiii",
+    "name": "Mantiblades Mk.III",
+    "type": "Weapon",
+    "description": "An upgrade to the standard Mantiblades developed by <strong>RTC</strong>. A set of blades that are embedded into the forearms of the user that can extend outwards, mimicking the style of the ancient praying mantis insectoid found on <strong>Cradle</strong>. The Mantiblades Mk.II feature a more jagged design to increase the severity of wounds delivered to victims.",
+    "effect": "<strong>On Hit: </strong>The Target must succeed on an agility save or <strong>Bleed</strong> is applied to them.",
+    "damage": [{"val": "1d3+3","type": "Kinetic"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "tg_ap"}, {"id": "rge-tags_bleed"}, {"id": "rge-tags_clearance","val": 7}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_flamingmantibladesmkii",
+    "name": "Flaming Mantiblades Mk.II",
+    "type": "Weapon",
+    "description": "The Flaming Mantiblades Mk.II, also referred to Model F.2 Mantiblades, are an upgrade to the original version of the Flaming Mantiblades. Embedded robotic and cybernetic support allow for the blades to be faster and more deadly. The flame module has also been improved to allow for easier activation to improve the odds of igniting victims.",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 3+, the Target also takes 1 Burn damage.",
+    "damage": [{"type": "Kinetic","val": "1d3+1"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 5}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_flamingmantibladesmkiii",
+    "name": "Flaming Mantiblades Mk.III",
+    "type": "Weapon",
+    "description": "The Flaming Mantiblades Mk.III, also referred to Model F.3 Mantiblades, are a further upgrade from the Flaming Mantiblades Mk.II. The embedded robotic and cybernetic supports have been improved on top of the flame module, allowing for almost 100% ignition of victims. ",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 2+, the Target also takes 1 Burn damage.",
+    "damage": [{"type": "Kinetic","val": "2d3"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 7}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_energymantibladesmkii",
+    "name": "Energy Mantiblades Mk.II",
+    "type": "Weapon",
+    "description": "The Energy Mantiblades Mk.II, also referred to Model E.2 Mantiblades, are an upgrade to the original version of the Energy Mantiblades. Embedded robotic and cybernetic support allow for the blades to be faster and more deadly. The energy module has also been improved to have a more sensitive trigger to expel built up energy.",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 3+, the Target also takes 1 Energy damage.",
+    "damage": [{"type": "Kinetic","val": "1d3+1"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 5}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_energymantibladesmkiii",
+    "name": "Energy Mantiblades Mk.III",
+    "type": "Weapon",
+    "description": "The Energy Mantiblades Mk.III, also referred to Model E.3 Mantiblades, are a further upgrade from the Energy Mantiblades Mk.II. The embedded robotic and cybernetic supports have been improved on top of the energy module, allowing for almost a guaranteed chance of activation.",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 2+, the Target also takes 1 Energy damage.",
+    "damage": [{"type": "Kinetic","val": "2d3"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 7}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_dynamantibladesmkii",
+    "name": "Dyna Mantiblades Mk.II",
+    "type": "Weapon",
+    "description": "The Dyna Mantiblades Mk.II, also referred to Model D.II Mantiblades, are an improvement on the original Dyna Mantiblades. A larger explosive charge is stored in the Mk.II allowing for greater damage to the victim. the Mk.II of the Dyna Mantiblades still shares the drawback of less effective blades, meaning there is a heavier reliance on the explosive charges.",
+    "effect": "<strong>On Hit:</strong> You may choose to expend a charge to deal an additional 1d6+2 Explosive damage, this roll is treated as <strong>Overkill</strong> and as such any time a 1 is rolled, the user takes 1 Explosive damage and damage is re-rolled.",
+    "damage": [{"type": "Kinetic","val": 1}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "tg_overkill"}, {"id": "tg_limited","val": 3}, {"id": "rge-tags_clearance","val": 5}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_dynamantibladesmkiii",
+    "name": "Dyna Mantiblades Mk.III",
+    "type": "Weapon",
+    "effect": "<strong>On Hit:</strong> You may choose to expend a charge to deal an additional 1d6 Explosive damage.",
+    "description": "The Dyna Mantiblades Mk.III, also referred to Model D.III Mantiblades, are an improvement on the Dyna Mantiblades Mk.II. The explosive yield is not as powerful as the Mk.II, but the blades themselves are much more useful in combat without the explosive charges now. The risk to the user has also now been mitigated, with the force of the blast now being directly entirely towards the victims.",
+    "damage": [{"type": "Kinetic","val": 3}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "tg_limited","val": 3}, {"id": "rge-tags_clearance","val": 7}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_gear_c4",
+    "name": "C4",
+    "type": "Gear",
+    "description": "",
+    "effect": "<span>Expend a charge for the following effect:</span><br/><ul><li><strong>C4</strong> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters take 5 Explosive damage. Affected objects take 15 Explosive damage.<br/></li></ul>",
+    "tags": [{"id": "tg_limited","val": 1}],
+    "deployables": [
+      {
+        "name": "C4",
+        "type": "Mine",
+        "detail": "<span>This charge must be remotely detonated as a quick action. Affected characters take 5 Explosive damage. Affected objects take 15 Explosive damage</span>",
+        "size": null,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": true,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Detonate",
+            "activation": "Quick",
+            "detail": "Affected characters take 5 Explosive damage.",
+            "pilot": true,
+            "damage": [{"type": "Explosive","val": 5}],
+            "frequency": "Unlimited"
+          },
+          {
+            "name": "Detonate (vs. Object)",
+            "activation": "Quick",
+            "detail": "Affected objects take 15 Explosive damage.",
+            "pilot": true,
+            "damage": [{"type": "Explosive","val": 15}],
+            "frequency": "Unlimited"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_gear_combatdrone",
+    "name": "Combat Drone",
+    "type": "Gear",
+    "effect": "The user can choose which kind of combat drone they have, with the following deployables:<br>- <strong>Assault</strong><br>- <strong>Explosive</strong><br>- <strong>Sniper</strong>",
+    "description": "A modification of the original Personal Drone for a more combative role. They maintain similar range but are are slightly larger with exact sizes ranging depending on the type of combat drone.",
+    "deployables": [
+      {
+        "name": "Assault Drone",
+        "type": "Drone",
+        "detail": "An assault drone that the user can deploy for close range assaults.",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "8",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "5",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "10",
+        "speed": "5",
+        "pilot": true,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Attack",
+            "activation": "Quick",
+            "detail": "Attack with the Assault Drone",
+            "pilot": true,
+            "damage": [{"type": "Kinetic","val": "1d3+2"}],
+            "range": [{"type": "Range","val": 3}],
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Explosive Drone",
+        "type": "Drone",
+        "detail": "A drone specializing in explosive weaponry meant to get up close and personal for maximum effectiveness.",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "8",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "5",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "10",
+        "speed": "5",
+        "pilot": true,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Attack",
+            "activation": "Quick",
+            "detail": "Attack with the Explosive Drone",
+            "pilot": true,
+            "damage": [{"type": "Explosive","val": "1d6+1"}],
+            "range": [{"type": "Burst","val": 1}],
+            "frequency": "Unlimited"
+          }
+        ]
+      },
+      {
+        "name": "Sniper Drone",
+        "type": "Drone",
+        "detail": "A sniper drone meant for long range attacks that have armor piercing rounds.",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "8",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "5",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "10",
+        "speed": "5",
+        "pilot": true,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Attack",
+            "activation": "Quick",
+            "detail": "Attack with the Sniper Drone.<br/>Attacks with the Sniper Drone are considered to be AP.",
+            "pilot": true,
+            "damage": [{"type": "Kinetic","val": "1d3"}],
+            "range": [{"type": "Range","val": 12}],
+            "frequency": "Unlimited"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_weapon_pilotnanocarbonsword",
+    "name": "Pilot Nanocarbon Sword",
+    "type": "Weapon",
+    "description": "A nanocarbon sword meant for pilot use. It is smaller and easier to handle for basic combat.",
+    "damage": [{"type": "Kinetic","val": "1d3+2"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "rge-tags_clearance","val": 7}, {"id": "tg_reliable","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_pilotnanocarbonswordmkii",
+    "name": "Pilot Nanocarbon Sword Mk.II",
+    "type": "Weapon",
+    "description": "An improvement on the original Nanocarbon Sword meant for pilot use. The sword itself is slightly heavier near the top to allow for more kinetic force.",
+    "damage": [{"type": "Kinetic","val": "1d3+4"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "rge-tags_clearance","val": 9}, {"id": "tg_reliable","val": 2}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_pilotnanocarbonswordmkiii",
+    "name": "Pilot Nanocarbon Sword Mk.III",
+    "type": "Weapon",
+    "description": "A further improvement on the original Nanocarbon Sword meant for pilot use. The Mk.III version of the sword is now longer along with a jagged edge to deal with foes even after your initial cut.",
+    "effect": "<strong>On Hit: </strong>The Target must succeed on an agility save or <strong>Bleed</strong> is applied to them.",
+    "damage": [{"type": "Kinetic","val": "1d6+3"}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "rge-tags_clearance","val": 11}, {"id": "rge-tags_bleed"}, {"id": "tg_reliable","val": 2}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_flamingpilotnanocarbonsword",
+    "name": "Flaming Pilot Nanocarbon Sword",
+    "type": "Weapon",
+    "description": "A modification of the original Nanocarbon Sword designed for pilot use. Also known as the Model F, this modification comes with module that increases the heat of the sword itself, causing intense burns on contact.",
+    "damage": [{"type": "Kinetic","val": "1d3"}, {"type": "Burn","val": 1}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "rge-tags_clearance","val": 7}, {"id": "tg_reliable","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_flamingpilotnanocarbonswordmkii",
+    "name": "Flaming Pilot Nanocarbon Sword Mk.II",
+    "type": "Weapon",
+    "description": "An improvement on the original Flaming Nanocarbon Sword model. Also known as the Model F.2, the Mk.II version has improved the heat module of the weapon to induce more severe burns to victims.",
+    "damage": [{"type": "Kinetic","val": "1d3"}, {"type": "Burn","val": "1d3"}],
+    "range": [{"type": "Range","val": 1}],
+    "tags": [{"id": "rge-tags_clearance","val": 9}, {"id": "tg_reliable","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_flamingpilotnanocarbonswordmkiii",
+    "name": "Flaming Pilot Nanocarbon Sword Mk.III",
+    "type": "Weapon",
+    "description": "A further improvement on the original Flaming Nanocarbon Sword model. Also known as the Model F.3, the Mk.III version has improved the heat module even further, the sword now also emits a flame, a true sword of flames.",
+    "effect": "<strong>On Hit:</strong> Roll 1d6. On a 2+, the Target takes an additional 1d3 Burn damage.",
+    "damage": [{"val": 1,"type": "Kinetic"}, {"type": "Burn","val": "2d3"}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "rge-tags_clearance","val": 11}, {"id": "tg_reliable","val": 1}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_gear_smallnaniteswarm",
+    "name": "Small Nanite Swarm",
+    "type": "Gear",
+    "description": "A personal, small nanite swarm that can be used to mimic smaller sized objects such as keys, personal items, etc.<br><br>The swarm can also be used in a combative role to inflect minor damage to victims.",
+    "actions": [
+      {
+        "name": "Attack",
+        "activation": "Quick",
+        "detail": "Send out your personal nanite swarm to tear at a victim.",
+        "pilot": true,
+        "damage": [{"type": "Energy","val": "1d3"}],
+        "range": [{"type": "Range","val": 5}],
+        "frequency": "Unlimited"
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_gear_flashbang",
+    "name": "Flashbang",
+    "type": "Gear",
+    "description": "",
+    "effect": "<span>Expend a charge for the following effect:</span><br><br/><ul><li><strong>Flashbang</strong> (Grenade, Range 5, Blast 2): Until the end of your next turn, create a Blast 2 zone where this explodes. Affected characters inside the zone cannot draw line of sight outside of the zone and become <strong>Impaired</strong> until the end of the turn that they leave the zone on.<br/></li></ul>",
+    "tags": [{"id": "tg_limited","val": 2}],
+    "actions": [
+      {
+        "name": "Use Flashbang",
+        "activation": "Quick",
+        "detail": "Throw a flashbang within Range 5. Until the end of your next turn, create a Blast 2 zone where this explodes. Affected characters inside the zone cannot draw line of sight outside of the zone and become <strong>Impaired</strong> until the end of the turn that they leave the zone on.",
+        "pilot": true,
+        "range": [{"type": "Range","val": 5}],
+        "frequency": "Unlimited"
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_weapon_beamrifle",
+    "name": "Beam Rifle",
+    "type": "Weapon",
+    "description": "An energy-based rifle designed to concentrate high amounts of energy into a single beam. Due to the high amount of energy it takes to fire a single shot, it does take a while to recharge before it can be fired again.",
+    "effect": "Loading takes a quick action to perform.",
+    "damage": [{"type": "Energy","val": "2d6+4"}],
+    "range": [{"type": "Line","val": 8}, {"type": "Threat","val": 3}],
+    "tags": [{"id": "tg_loading"},{"id": "rge-tags_clearance","val": 7},{"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_beamriflemkii",
+    "name": "Beam Rifle Mk.II",
+    "type": "Weapon",
+    "description": "An improved version of the original Beam Rifle. The energy output has been improved, improving the range and possible damage from the beam.",
+    "effect": "Loading takes a quick action to perform.",
+    "damage": [{"val": "3d6","type": "Energy"}],
+    "range": [{"type": "Range","val": 10}, {"type": "Threat","val": 4}],
+    "tags": [{"id": "tg_loading"}, {"id": "rge-tags_clearance","val": 9}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_beamriflemkiii",
+    "name": "Beam Rifle Mk.III",
+    "type": "Weapon",
+    "description": "A further improvement on the original Beam Rifle. The beam has been concentrated further, making it powerful enough to pierce through heavy armor.",
+    "effect": "Loading takes a quick action to perform.",
+    "damage": [{"type": "Energy","val": "3d6"}],
+    "range": [{"type": "Range","val": 10}, {"type": "Threat","val": 4}],
+    "tags": [{"id": "tg_loading"}, {"id": "tg_ap"}, {"id": "rge-tags_clearance","val": 11}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_energyrapier",
+    "name": "Energy Rapier",
+    "type": "Weapon",
+    "description": "An energy-based blade weapon in the design of a rapier. The design is elegant, light, and meant for quick attacks. In energy form, this version of the ancient sword is even lighter and quicker.",
+    "damage": [{"type": "Energy","val": "1d3+2"}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 5}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_energyrapiermkii",
+    "name": "Energy Rapier Mk.II",
+    "type": "Weapon",
+    "description": "An improvement on the original Energy Rapier. Rather than a strictly energy-based design, the Mk.II goes for a hybrid design allowing it to cover different weaknesses in an opponent.",
+    "damage": [{"type": "Kinetic","val": "1d3+1"}, {"type": "Energy","val": "1d3+1"}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 7}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_energyrapiermkiii",
+    "name": "Energy Rapier Mk.III",
+    "type": "Weapon",
+    "description": "A further improvement on the original Energy Rapier design. The same dual design seen in the Mk.II is present, but the energy module has been improved to increase the amount of possible damage.",
+    "damage": [{"type": "Kinetic","val": "1d3+1"}, {"type": "Energy","val": "2d3+2"}],
+    "range": [{"type": "Range","val": 2}],
+    "tags": [{"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 9}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_repeatercrossbowmkii",
+    "name": "Repeater Crossbow Mk.II",
+    "type": "Weapon",
+    "description": "The Mk.lI of the Repeating Crossbow designed by <strong>RTC</strong>, also referred to the Model R.II Crossbow. The Mk.II features an additional charge system meaning it can attack even faster.",
+    "effect": "You can attack two Targets or the same Target twice each time you attack with this weapon.",
+    "damage": [{"type": "Energy","val": 1}],
+    "range": [{"type": "Range","val": 7}, {"type": "Threat","val": 3}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_weapon_repeatercrossbowmkiii",
+    "name": "Repeater Crossbow Mk.III",
+    "type": "Weapon",
+    "description": "The Mk.III of the Repeating Crossbow designed by <strong>RTC</strong>, also referred to the Model R.III Crossbow. The Mk.III has had its energy output increased to increase its damage.",
+    "effect": "You can attack two Targets or the same Target twice each time you attack with this weapon.",
+    "damage": [{"type": "Energy","val": 2}],
+    "range": [{"type": "Range","val": 7}, {"type": "Threat","val": 3}],
+    "tags": [{"id": "tg_ap"}, {"id": "tg_sidearm"}, {"id": "rge-tags_clearance","val": 5}, {"id": "tg_pilot_weapon"}]
+  },
+  {
+    "id": "rce-pilotgear_armor_assaulthardsuitmkii",
+    "name": "Assault Hardsuit Mk.II",
+    "type": "Armor",
+    "description": "An improvement on the original Assault Hardsuit. This version of the hardsuit is meant for more elite military units. The Mk.II features better armor plating and a better power supply to maintain the mobility of the original Assault Hardsuit. The Mk.II Assault Hardsuit also features the same systems found in the original Assault Hardsuit.",
+    "bonuses": [{"id": "pilot_armor","val": 2,"replace": true}, {"id": "pilot_hp","val": 5,"replace": true}, {"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 4}]
+  },
+  {
+    "id": "rce-pilotgear_armor_assaulthardsuitmkiii",
+    "name": "Assault Hardsuit Mk.III",
+    "type": "Armor",
+    "description": "A further improvement on the original Assault Hardsuit. The Mk.III version of the Assault Hardsuit features an improved power supply system to improve the mobility of the hardsuit. The increased power supply also means the original systems have been upgraded for user convenience.",
+    "bonuses": [{"id": "pilot_hp","val": 5,"replace": true}, {"id": "pilot_armor","val": 2,"replace": true}, {"id": "pilot_evasion","val": 10,"replace": true}, {"id": "pilot_edef","val": 11,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 6}]
+  },
+  {
+    "id": "rce-pilotgear_armor_lighthardsuitmkii",
+    "name": "Light Hardsuit Mk.II",
+    "type": "Armor",
+    "description": "An improvement to the original Light Suit. Featuring the same material, but with an improved power supply unit to provide power to parts of the hardsuit to make the user faster by having them spend less energy on their own movement.",
+    "bonuses": [{"id": "pilot_hp","val": 3,"replace": true}, {"id": "pilot_evasion","val": 12,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 4}]
+  },
+  {
+    "id": "rce-pilotgear_armor_lighthardsuitmkiii",
+    "name": "Light Hardsuit Mk.III",
+    "type": "Armor",
+    "description": "A major improvement on the original Light Suit and the Light Suit Mk.II. By keeping the power output from the power supply the same while decreasing its size along with the size of other powered components, more mobility is given to the user.",
+    "bonuses": [{"id": "pilot_hp","val": 3,"replace": true}, {"id": "pilot_evasion","val": 14,"replace": true}, {"id": "pilot_edef","val": 11,"replace": true}, {"id": "pilot_speed","val": 6,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 6}]
+  },
+  {
+    "id": "rce-pilotgear_armor_mobilityhardsuitmkii",
+    "name": "Mobility Hardsuit Mk.II",
+    "type": "Armor",
+    "description": "An improvement on the original Mobility Hardsuit. The Mk.II design is made with lighter but still effective to allow for better mobility than even the original Mobility Hardsuit could provide.",
+    "effect": "<span>These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.</span>",
+    "bonuses": [{"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_evasion","val": 11,"replace": true}, {"id": "pilot_speed","val": 6,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 4}]
+  },
+  {
+    "id": "rce-pilotgear_armor_mobilityhardsuitmkiii",
+    "name": "Mobility Hardsuit Mk.III",
+    "type": "Armor",
+    "description": "A further improvement on the original Mobility Hardsuit. The Mk.II version of the Mobility Hardsuit now features the same power supply from the Light Hardsuit Mk.III with an amplifier to allow for some of the best movement possible.",
+    "effect": "<span>These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.</span>",
+    "bonuses": [{"id": "pilot_edef","val": 11,"replace": true}, {"id": "pilot_evasion","val": 12,"replace": true}, {"id": "pilot_speed","val": 7,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcarmoredekoskeletonmkii",
+    "name": "RTC Armored Exoskeleton Mk.II",
+    "type": "Armor",
+    "description": "<span>The Armored Exoskeleton Mk.II designed by </span><strong>RTC</strong><span>, also referred to as the Model A.II Exoskeleton. The Mk.II design features a better power supply to increase mobility.</span>",
+    "bonuses": [{"id": "pilot_armor","val": 4,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_evasion","val": 7,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcarmoredekoskeletonmkiii",
+    "name": "RTC Armored Exoskeleton Mk.III",
+    "type": "Armor",
+    "description": "<span>The Armored Exoskeleton Mk.III designed by </span><strong>RTC</strong><span>, also referred to as the Model A.III Exoskeleton. The Mk.III design features a new compact but efficient power supply as well as built in systems to improve pilot health.</span>",
+    "bonuses": [{"id": "pilot_armor","val": 4,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}, {"id": "pilot_hp","val": 2,"replace": true}], 
+    "tags": [{      "id": "rge-tags_clearance","val": 6}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcexoskeletonmkii",
+    "name": "RTC Exoskeleton Mk.II",
+    "type": "Armor",
+    "description": "An improved version of the standard Exoskeleton designed by <strong>RTC</strong>. The Mk.II design features slightly improved armor as well as built in health systems for the pilot.",
+    "bonuses": [{"id": "pilot_armor","val": 2,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}, {"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_hp","val": 2,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcexoskeletonmkiii",
+    "name": "RTC Exoskeleton Mk.III",
+    "type": "Armor",
+    "description": "A further improvement on the standard Exoskeleton designed by <strong>RTC</strong>. The Mk.III version features improved systems for the convenience of the pilot.",
+    "bonuses": [{"id": "pilot_armor","val": 2,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_evasion","val": 9,"replace": true}, {"id": "pilot_hp","val": 4,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 6}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcevasiveexoskeletonmkii",
+    "name": "RTC Evasive Exoskeleton Mk.II",
+    "type": "Armor",
+    "description": "An improvement on the Evasive Exoskeleton designed by <strong>RTC</strong>, also referred to as the Model E.II Exoskeleton. The Mk.II design is made from a lighter material to further aid in user movement by making movement even easier.",
+    "bonuses": [{"id": "pilot_evasion","val": 14,"replace": true}, {"id": "pilot_speed","val": 6,"replace": true}, {"id": "pilot_edef","val": 9,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 3}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcevasiveexoskeletonmkiii",
+    "name": "RTC Evasive Exoskeleton Mk.III",
+    "type": "Armor",
+    "description": "A further improvement on the Evasive Exoskeleton designed by <strong>RTC</strong>, also referred to as the Model E.III Exoskeleton. The Mk.III design features an improved power supply to make movement extremely easy as well as providing additional systems to improve pilot health.",
+    "bonuses": [{"id": "pilot_evasion","val": 16,"replace": true}, {"id": "pilot_speed","val": 6,"replace": true}, {"id": "pilot_edef","val": 9,"replace": true}, {"id": "pilot_hp","val": 2,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 6}]
+  },
+  {
+    "id": "rce-pilotgear_armor_reactivesuitmkii",
+    "name": "Reactive Suit Mk.II",
+    "type": "Armor",
+    "description": "An improvement on the original Reactive Suit. The Mk.II version of the suit improves upon the systems of the original suit to increase evasive capabilities as well as making the suit lighter to improve movement capabilities.",
+    "bonuses": [{"id": "pilot_evasion","val": 17,"replace": true}, {"id": "pilot_edef","val": 7,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 6}]
+  },
+  {
+    "id": "rce-pilotgear_armor_reactivesuitmkiii",
+    "name": "Reactive Suit Mk.III",
+    "type": "Armor",
+    "description": "A further improvement on the original Reactive Suit. The Mk.III version of the suit features new systems to improve pilot health and comfort as well improving the evasive capabilities. Pilots must be careful to not overwork their body with this suit.",
+    "effect": "Anytime the user is attacked and the attack misses, a 1d20 must be rolled. If a 1 is rolled, the user takes 1 Kinetic damage.",
+    "bonuses": [{"id": "pilot_evasion","val": 18,"replace": true}, {"id": "pilot_edef","val": 7,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}, {"id": "pilot_hp","val": 2,"replace": true}],
+    "tags": [{"id": "rge-tags_clearance","val": 9}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcengineersuit",
+    "name": "Engineer Suit",
+    "type": "Armor",
+    "description": "A standard suit designed for engineers. The Engineer Suit is designed for practical use by engineers and offers minor physical protection in favor of other forms of protection. Along with being light enough to not hamper movement in evacuation scenarios.",
+    "bonuses": [{"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_edef","val": 16,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_armor_rtcengineersuit",
+    "name": "Support Suit",
+    "type": "Armor",
+    "description": "A standard suit designed for general support units. The Support Suit is designed for practical use by units filling general support roles and offers minor physical protection and limited systems. The suit is light enough though to not hamper movement in evacuation scenarios.",
+    "bonuses": [{"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_edef","val": 8,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}]
+  },
+  {
+    "id": "rce-pilotgear_gear_improvedpersonaldrone",
+    "name": "Improved Personal Drone",
+    "type": "Gear",
+    "description": "An improved version of the Personal Drone. The drone is now quieter and has improved range, being able to operate up to about two miles before losing signal. The drone's cameras have also been improved offering better visual clarity when relaying visual information.",
+    "tags" : [{"id": "rge-tags_clearance","val": 3}]
+  },
+  {
+    "id": "rce-pilotgear_gear_improvedpatch",
+    "name": "Improved Patch",
+    "type": "Gear",
+    "description": "An improved version of the Patch. You may expend a charge to apply a patch to either yourself or an adjacent pilot, restoring 75% of their maximum HP, rounded down. Improved Patches still have no effect on Down and Out pilots.",
+    "tags" : [{"id": "rge-tags_clearance","val": 5}, {"id": "tg_limited","val": 1}],
+    "actions": [
+      {
+        "name": "Use Improved Patch",
+        "activation": "Full",
+        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring 75% their maximum HP, rounded down. Improved Patches have no effect on Down and Out pilots.",
+        "pilot": true,
+        "frequency": "Unlimited"
+      }
+    ]
+  },
+  {
+    "id": "rce-pilotgear_gear_fullpatch",
+    "name": "Full Patch",
+    "type": "Gear",
+    "description": "A further improvement on the original Patch. You may expend a charge to apply a patch to either yourself or an adjacent pilot, restoring 100% of their maximum HP. Full Patches still have no effect on Down and Out pilots.",
+    "tags" : [{"id": "rge-tags_clearance","val": 8}, {"id": "tg_limited","val": 1}],
+    "actions": [
+      {
+        "name": "Use Full Patch",
+        "activation": "Full",
+        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring 100% their maximum HP. Full Patches have no effect on Down and Out pilots.",
+        "pilot": true,
+        "frequency": "Unlimited"
+      }
+    ]
+  }
+]
