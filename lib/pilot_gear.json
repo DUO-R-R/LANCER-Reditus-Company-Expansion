@@ -69,7 +69,7 @@
     "name": "RTC Railgun",
     "type": "Weapon",
     "description": "An experimental charged railgun developed by <strong>RTC</strong>.",
-    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, <span>this weapon also takes up 1 gear slot.</span>",
+    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, this weapon also takes up 1 gear slot.",
     "damage": [{"type": "Kinetic","val": "1d3+1"}],
     "range": [{"type": "Line","val": 10}, {"type": "Threat","val": 4}],
     "tags": [{"id": "tg_ap"}, {"id": "rge-tags_charges","val": 2}, {"id": "rge-tags_clearance","val": 3}, {"id": "tg_pilot_weapon"}]
@@ -313,7 +313,7 @@
     "name": "RTC Railgun Mk.II",
     "type": "Weapon",
     "description": "The Mk.II of the experimental railgun developed by <strong>RTC</strong>. The Mk.II model features a higher base charge capacity and increased range.",
-    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, <span>this weapon also takes up 1 gear slot.</span>",
+    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, this weapon also takes up 1 gear slot.",
     "damage": [{"type": "Kinetic","val": "1d3+1"}],
     "range": [{"type": "Line","val": 15}, {"type": "Threat","val": 5}],
     "tags": [{"id": "tg_ap"}, {"id": "rge-tags_clearance","val": 4}, {"id": "rge-tags_charges","val": 3}, {"id": "tg_pilot_weapon"}]
@@ -323,7 +323,7 @@
     "name": "RTC Railgun Mk.III",
     "type": "Weapon",
     "description": "The Mk.III of the experimental railgun developed by <strong>RTC</strong>. The Mk.III model features experimental ammo that can be accelerated to a higher velocity and dish out a bigger punch.",
-    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, <span>this weapon also takes up 1 gear slot.</span><br><br><br><strong>On Hit: </strong>The Target must succeed on an agility save or become <strong>Shredded</strong>.",
+    "effect": "When firing, the user may choose how many charges are used with a minimum of one being needed. The damage is multiplied by the amount of charges used (example: two charges would be x2).<br><br>Due to its size, this weapon also takes up 1 gear slot.<br><br><br><strong>On Hit: </strong>The Target must succeed on an agility save or become <strong>Shredded</strong>.",
     "damage": [{"type": "Kinetic","val": "2d3"}],
     "range": [{"type": "Line","val": 15}, {"type": "Threat","val": 5}],
     "tags": [{"id": "tg_ap"}, {"id": "rge-tags_clearance","val": 7}, {"id": "rge-tags_charges","val": 3}, {"id": "tg_pilot_weapon"}]
@@ -427,13 +427,13 @@
     "name": "C4",
     "type": "Gear",
     "description": "",
-    "effect": "<span>Expend a charge for the following effect:</span><br/><ul><li><strong>C4</strong> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters take 5 Explosive damage. Affected objects take 15 Explosive damage.<br/></li></ul>",
+    "effect": "Expend a charge for the following effect:<br/><ul><li><strong>C4</strong> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters take 5 Explosive damage. Affected objects take 15 Explosive damage.<br/></li></ul>",
     "tags": [{"id": "tg_limited","val": 1}],
     "deployables": [
       {
         "name": "C4",
         "type": "Mine",
-        "detail": "<span>This charge must be remotely detonated as a quick action. Affected characters take 5 Explosive damage. Affected objects take 15 Explosive damage</span>",
+        "detail": "This charge must be remotely detonated as a quick action. Affected characters take 5 Explosive damage. Affected objects take 15 Explosive damage",
         "size": null,
         "activation": "Quick",
         "deactivation": "",
@@ -666,7 +666,7 @@
     "name": "Flashbang",
     "type": "Gear",
     "description": "",
-    "effect": "<span>Expend a charge for the following effect:</span><br><br/><ul><li><strong>Flashbang</strong> (Grenade, Range 5, Blast 2): Until the end of your next turn, create a Blast 2 zone where this explodes. Affected characters inside the zone cannot draw line of sight outside of the zone and become <strong>Impaired</strong> until the end of the turn that they leave the zone on.<br/></li></ul>",
+    "effect": "Expend a charge for the following effect:<br><br/><ul><li><strong>Flashbang</strong> (Grenade, Range 5, Blast 2): Until the end of your next turn, create a Blast 2 zone where this explodes. Affected characters inside the zone cannot draw line of sight outside of the zone and become <strong>Impaired</strong> until the end of the turn that they leave the zone on.<br/></li></ul>",
     "tags": [{"id": "tg_limited","val": 2}],
     "actions": [
       {
@@ -793,7 +793,7 @@
     "name": "Mobility Hardsuit Mk.II",
     "type": "Armor",
     "description": "An improvement on the original Mobility Hardsuit. The Mk.II design is made with lighter but still effective to allow for better mobility than even the original Mobility Hardsuit could provide.",
-    "effect": "<span>These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.</span>",
+    "effect": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
     "bonuses": [{"id": "pilot_edef","val": 10,"replace": true}, {"id": "pilot_evasion","val": 11,"replace": true}, {"id": "pilot_speed","val": 6,"replace": true}],
     "tags": [{"id": "rge-tags_clearance","val": 4}]
   },
@@ -802,14 +802,14 @@
     "name": "Mobility Hardsuit Mk.III",
     "type": "Armor",
     "description": "A further improvement on the original Mobility Hardsuit. The Mk.II version of the Mobility Hardsuit now features the same power supply from the Light Hardsuit Mk.III with an amplifier to allow for some of the best movement possible.",
-    "effect": "<span>These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.</span>",
+    "effect": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
     "bonuses": [{"id": "pilot_edef","val": 11,"replace": true}, {"id": "pilot_evasion","val": 12,"replace": true}, {"id": "pilot_speed","val": 7,"replace": true}]
   },
   {
     "id": "rce-pilotgear_armor_rtcarmoredekoskeletonmkii",
     "name": "RTC Armored Exoskeleton Mk.II",
     "type": "Armor",
-    "description": "<span>The Armored Exoskeleton Mk.II designed by </span><strong>RTC</strong><span>, also referred to as the Model A.II Exoskeleton. The Mk.II design features a better power supply to increase mobility.</span>",
+    "description": "The Armored Exoskeleton Mk.II designed by <strong>RTC</strong>, also referred to as the Model A.II Exoskeleton. The Mk.II design features a better power supply to increase mobility.",
     "bonuses": [{"id": "pilot_armor","val": 4,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_evasion","val": 7,"replace": true}, {"id": "pilot_speed","val": 4,"replace": true}],
     "tags": [{"id": "rge-tags_clearance","val": 3}]
   },
@@ -817,7 +817,7 @@
     "id": "rce-pilotgear_armor_rtcarmoredekoskeletonmkiii",
     "name": "RTC Armored Exoskeleton Mk.III",
     "type": "Armor",
-    "description": "<span>The Armored Exoskeleton Mk.III designed by </span><strong>RTC</strong><span>, also referred to as the Model A.III Exoskeleton. The Mk.III design features a new compact but efficient power supply as well as built in systems to improve pilot health.</span>",
+    "description": "The Armored Exoskeleton Mk.III designed by <strong>RTC</strong>, also referred to as the Model A.III Exoskeleton. The Mk.III design features a new compact but efficient power supply as well as built in systems to improve pilot health.",
     "bonuses": [{"id": "pilot_armor","val": 4,"replace": true}, {"id": "pilot_edef","val": 12,"replace": true}, {"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}, {"id": "pilot_hp","val": 2,"replace": true}], 
     "tags": [{      "id": "rge-tags_clearance","val": 6}]
   },
