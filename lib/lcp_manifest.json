@@ -16,7 +16,7 @@
             "Fixed C4 size value, changed to 0.5 instead of null.",
             "Added 'Clearance' tag to Mobility Hardsuit Mk.III"
         ]
-      }
+      },
       {
         "version": "0.1.0",
         "date": "2026-05-28",
