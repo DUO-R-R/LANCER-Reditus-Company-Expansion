@@ -8,6 +8,16 @@
     "image_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png",
     "version_history": [
       {
+        "version": "0.1.1.",
+        "date": "2026-05-30",
+        "changes": [
+            "Added Image in Manifest to display.",
+            "Removed unnecessary <span> tag in descriptions.",
+            "Fixed C4 size value, changed to 0.5 instead of null.",
+            "Added 'Clearance' tag to Mobility Hardsuit Mk.III"
+        ]
+      }
+      {
         "version": "0.1.0",
         "date": "2026-05-28",
         "changes" : []
