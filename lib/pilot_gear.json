@@ -105,7 +105,7 @@
     "id": "rce-pilotgear_weapon_explosivecrossbow",
     "name": "Explosive Crossbow",
     "type": "Weapon",
-    "description": "Unlike the previous models of the Crossbow, the Explosive Crossbow is modified to not be energy based. Also referred to as the Model E Crossbow, this model trades out the traditional energy-based propulsion for the traditional ancient methods of propelling a crossbolt. However, the bolts this model fires are laced with explosives that detonate on impact. This modification while massively increasing the potentional damage, means that it is slow to reload and has a reduced range.",
+    "description": "Unlike the previous models of the Crossbow, the Explosive Crossbow is modified to not be energy based. Also referred to as the Model E Crossbow, this model trades out the traditional energy-based propulsion for the traditional ancient methods of propelling a crossbolt. However, the bolts this model fires are laced with explosives that detonate on impact. This modification while massively increasing the potential damage, means that it is slow to reload and has a reduced range.",
     "damage": [{"type": "Explosive","val": "1d6"}],
     "range": [{"type": "Range","val": 5}, {"type": "Threat","val": 2}],
     "tags": [{"id": "tg_ap"}, {"id": "tg_reliable","val": 1}, {"id": "rge-tags_charges","val": 1}, {"id": "tg_pilot_weapon"}]
@@ -138,7 +138,7 @@
   },
   {
     "id": "rce-pilotgear_gear_biohudcyberneticimplant",
-    "name": "Bio-H.U.D Cybernetic Implact",
+    "name": "Bio-H.U.D Cybernetic Implant",
     "type": "Gear",
     "description": "Rather than requiring a piece of headgear, a user can choose to get this cybernetic implant into their brain to give a natural H.U.D projected into their vision when they want. This allows for better battlefield awareness as well as providing improved vision in darkness, heat vision, and other features. The user must be careful though as a drawback is that this implant can be hacked to effectively mess with their vision."
   },
@@ -168,7 +168,7 @@
     "id": "rce-pilotgear_gear_nanimmunocyberneticimplant",
     "name": "Nanimmuno Cybernetic Implant",
     "type": "Gear",
-    "description": "A cybernetic implant designed to aid in the user's immune response. Whenever the implant detects the body's natural immune response responding to a foreign object, the implant floods the body with nanites that follow the response to the foreign objects and work with the body to eliminate the threat, effectively making the user fully immune to all known and unknown diseases so long as the swarm is able to be deployed.<br><br>Without the swarm, the body has to rely soley on its own response, though immunity is still developed to any diseases fought off with the swarm."
+    "description": "A cybernetic implant designed to aid in the user's immune response. Whenever the implant detects the body's natural immune response responding to a foreign object, the implant floods the body with nanites that follow the response to the foreign objects and work with the body to eliminate the threat, effectively making the user fully immune to all known and unknown diseases so long as the swarm is able to be deployed.<br><br>Without the swarm, the body has to rely solely on its own response, though immunity is still developed to any diseases fought off with the swarm."
   },
   {
     "id": "rce-pilotgear_gear_regenateloproteinbiomodification",
@@ -336,7 +336,7 @@
     "id": "rce-pilotgear_weapon_extendedmantibladesmkiii",
     "name": "Extended Mantiblades Mk.III",
     "type": "Weapon",
-    "description": "The Extended Mantiblades Mk.III, a further upgrade from the Extended Mantiblades Mk.III. With improved range and more advanced cybernetically enhanced muscles, the Extended Mantiblades Mk.III are now more deadly. The more jagged edge design from the Mantiblades Mk.II are also featured in this design.",
+    "description": "The Extended Mantiblades Mk.III, a further upgrade from the Extended Mantiblades Mk.II. With improved range and more advanced cybernetically enhanced muscles, the Extended Mantiblades Mk.III are now more deadly. The more jagged edge design from the Mantiblades Mk.II are also featured in this design.",
     "effect": "<strong>On Hit: </strong>The Target must succeed on an agility save or <strong>Bleed</strong> is applied to them.",
     "damage": [{"type": "Kinetic","val": 3}],
     "range": [{"type": "Range","val": 3}],
@@ -346,7 +346,7 @@
     "id": "rce-pilotgear_weapon_mantibladesmkiii",
     "name": "Mantiblades Mk.III",
     "type": "Weapon",
-    "description": "An upgrade to the standard Mantiblades developed by <strong>RTC</strong>. A set of blades that are embedded into the forearms of the user that can extend outwards, mimicking the style of the ancient praying mantis insectoid found on <strong>Cradle</strong>. The Mantiblades Mk.II feature a more jagged design to increase the severity of wounds delivered to victims.",
+    "description": "An upgrade to the standard Mantiblades developed by <strong>RTC</strong>. A set of blades that are embedded into the forearms of the user that can extend outwards, mimicking the style of the ancient praying mantis insectoid found on <strong>Cradle</strong>. The Mantiblades Mk.III feature a more jagged design to increase the severity of wounds delivered to victims.",
     "effect": "<strong>On Hit: </strong>The Target must succeed on an agility save or <strong>Bleed</strong> is applied to them.",
     "damage": [{"val": "1d3+3","type": "Kinetic"}],
     "range": [{"type": "Range","val": 1}],
@@ -835,14 +835,14 @@
     "tags": [{"id": "rge-tags_clearance","val": 9}]
   },
   {
-    "id": "rce-pilotgear_armor_rtcengineersuit",
+    "id": "rce-pilotgear_armor_engineersuit",
     "name": "Engineer Suit",
     "type": "Armor",
     "description": "A standard suit designed for engineers. The Engineer Suit is designed for practical use by engineers and offers minor physical protection in favor of other forms of protection. Along with being light enough to not hamper movement in evacuation scenarios.",
     "bonuses": [{"id": "pilot_evasion","val": 8,"replace": true}, {"id": "pilot_edef","val": 16,"replace": true}, {"id": "pilot_speed","val": 5,"replace": true}]
   },
   {
-    "id": "rce-pilotgear_armor_rtcengineersuit",
+    "id": "rce-pilotgear_armor_supportsuit",
     "name": "Support Suit",
     "type": "Armor",
     "description": "A standard suit designed for general support units. The Support Suit is designed for practical use by units filling general support roles and offers minor physical protection and limited systems. The suit is light enough though to not hamper movement in evacuation scenarios.",
