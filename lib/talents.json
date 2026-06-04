@@ -234,7 +234,7 @@
             "frequency": "Unlimited"
           },
           {
-            "name": "Thread Reduction",
+            "name": "Threat Reduction",
             "activation": "Invade",
             "detail": "Your Target will have no Threat on any weapon until the end of their next turn. This effectively means they cannot make Overwatch reactions with any weapon.<br>When you hit with this invade, you take 2 Heat.",
             "frequency": "Unlimited"

@@ -6,7 +6,7 @@
     "license": "",
     "license_id": "",
     "license_level": 1,
-    "effect": "3/Scene, you can deploy a mine anywhere within Sensor range.<br><br>Whenever a hostile character gets within Burst 2, the mine explodes.<br>This will leave behind a Bust 2 cloud that whenever a biological character comes within, they gain the <strong>Pathoparalysis</strong> Status.",
+    "effect": "3/Scene, you can deploy a mine anywhere within Sensor range.<br><br>Whenever a hostile character gets within Burst 2, the mine explodes.<br>This will leave behind a Burst 2 cloud that whenever a biological character comes within, they gain the <strong>Pathoparalysis</strong> Status.",
     "type": "System",
     "sp": "0",
     "description": "",
