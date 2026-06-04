@@ -2,11 +2,33 @@
     "name": "Reditus Company Expansion",
     "author": "DUO R&R",
     "item_prefix": "rce",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "description": "The Reditus Company Expansion offers a variety of new gear, weapons, and more for use in campaigns offered by the Reditus Technology Corporation (RTC) in addition to more general gear.",
     "website": "https://duo-rr.itch.io/lancer-reditus-company-expansion",
     "image_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png",
     "version_history": [
+      {
+        "version": "0.1.3",
+        "date": "2026-06-04",
+        "changes": [
+            "Fixed Effect description for the Reaction in the 'Chronotardus Cybernetic Implant' gear.",
+            "Minor alteration to the description on the 'Explosive Crossbow' gear.",
+            "Corrected item descriptions for model numbering.",
+            "Removed unnecessary key-value pairs.",
+        ]
+      },
+      {
+        "version": "0.1.2",
+        "date": "2026-06-03",
+        "changes": [
+            "Changed 'Bust' to the proper 'Burst' in effect for Pathoparalysis Mine.",
+            "Corrected spelling of Thread to Threat for 'Threat Reduction' invade option for the 'Sensicrack' tier in the 'Autotechnocrat' talent.",
+            "Fixed some typos.",
+            "Fixed duplicate gear IDs.",
+            "Fixed values for some gear IDs.",
+            "Fixed descriptions for gear pieces."
+        ]
+      },
       {
         "version": "0.1.1.",
         "date": "2026-05-30",
