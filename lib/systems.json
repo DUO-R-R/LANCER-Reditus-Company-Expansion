@@ -26,9 +26,10 @@
     "id": "rce-systems_neuraxworm",
     "name": "Neurax Worm",
     "source": "RTC",
-    "license": "Mechanized Virus",
     "type": "System",
-    "sp": 3,
+    "license": "Mechanized Virus",
+    "license_level": 1,
+    "sp": 2,
     "description": "Unlike traditional system hacking, the <strong>Neurax Worm</strong> physically launches from the mech and burrows into the Target. This causes physical damage to the mech during this process as it attempts to take over.",
     "tags": [{"id": "tg_unique"}],
     "actions": [
@@ -36,6 +37,46 @@
         "name": "Launch Neurax Worm",
         "activation": "Full Tech",
         "detail": "The Target must perform a <strong>Hull</strong> save and a <strong>Systems</strong> save.<br><br>If the <strong>Hull</strong> save fails, the Target takes 1d4 Kinetic damage that is considered Armor Piercing (AP).<br>If the <strong>Systems</strong> save fails, the Target takes 2 Heat.",
+        "tech_attack": true,
+        "frequency": "Unlimited"
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_stucry",
+    "name": "Stucry",
+    "source": "RTC",
+    "type": "System",
+    "license": "Mechanized Virus",
+    "license_level": 1,
+    "sp": 2,
+    "description": "Stucry, an advanced virus designed to cause the Target's systems to start misbehaving and misfiring.",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Launch Stucry",
+        "activation": "Full Tech",
+        "details": "Upon success, the Target fires with a random weapon chosen by the GM at a random character within range of said weapon. If there is not a valid Target for any of their weapons, then they fire upon themselves with a random weapon chosen by the GM.",
+        "tech_attack": true,
+        "frequency": "Unlimited"
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_cywire",
+    "name": "CyWire",
+    "source": "RTC",
+    "type": "System",
+    "license": "Mechanized Virus",
+    "license_level": 1,
+    "sp": 3,
+    "description": "",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Launch CyWire",
+        "activation": "Full Tech",
+        "details": "Upon success, you may choose two mech stats of your Target (Hull, Agility, Systems, Engineering). The values of these two stats are swapped until the end of your next turn.<br><br>You cannot use this on a Target already suffering from this attack.",
         "tech_attack": true,
         "frequency": "Unlimited"
       }
