@@ -1,0 +1,10 @@
+[
+  {
+    "id": "rce-frames_mechanizedvirus",
+    "name": "Mechanized Virus",
+    "description": "The <strong>RTC</strong> line of specialized viruses designed to wreck the systems of mechs.",
+    "mechtype": ["Specialty"],
+    "specialty": true,
+    "traits": [], "mounts": [], "stats": {}, "core_system": {}
+  }
+]
