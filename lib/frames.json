@@ -3,6 +3,7 @@
     "id": "rce-frames_mechanizedvirus",
     "name": "Mechanized Virus",
     "source": "RTC",
+    "license_level": 1,
     "description": "The <strong>RTC</strong> line of specialized viruses designed to wreck the systems of mechs.",
     "mechtype": ["Specialty"],
     "specialty": true,
