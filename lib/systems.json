@@ -1,44 +1,44 @@
 [
-    {
-        "id": "rce-systems_pathoparalysismine",
+  {
+    "id": "rce-systems_pathoparalysismine",
+    "name": "Pathoparalysis Mine",
+    "source": "RTC",
+    "type": "System",
+    "license_level": 1,
+    "sp": "0",
+    "description": "",
+    "effect": "3/Scene, you can deploy a mine anywhere within Sensor range.<br><br>Whenever a hostile character gets within Burst 2, the mine explodes.<br>This will leave behind a Burst 2 cloud that whenever a biological character comes within, they gain the <strong>Pathoparalysis</strong> Status.",
+    "tags": [{"id": "tg_quick_action"},{"id": "tg_unique"}],
+    "deployables": [
+      {
         "name": "Pathoparalysis Mine",
-        "source": "RTC",
-        "type": "System",
-        "license_level": 1,
-        "sp": "0",
-        "description": "",
-        "effect": "3/Scene, you can deploy a mine anywhere within Sensor range.<br><br>Whenever a hostile character gets within Burst 2, the mine explodes.<br>This will leave behind a Burst 2 cloud that whenever a biological character comes within, they gain the <strong>Pathoparalysis</strong> Status.",
-        "tags": [{"id": "tg_quick_action"},{"id": "tg_unique"}],
-        "deployables": [
-            {
-                "name": "Pathoparalysis Mine",
-                "type": "Mine",
-                "size": 0.5,
-                "activation": "Quick",
-                "redeploy": "Quick",
-                "cost": 1,
-                "hp": "10",
-                "mech": true
-            }
-        ]
-    },
-    {
-        "id": "rce-systems_neuraxworm",
-        "name": "Neurax Worm",
-        "source": "RTC",
-        "license": "Mechanized Virus",
-        "type": "System",
-        "sp": 3,
-        "description": "Unlike traditional system hacking, the <strong>Neurax Worm</strong> physically launches from the mech and burrows into the Target. This causes physical damage to the mech during this process as it attempts to take over.",
-        "tags": [{"id": "tg_unique"}],
-        "actions": [
-            {
-                "name": "Launch Neurax Worm",
-                "activation": "Full Tech",
-                "detail": "The Target must perform a <strong>Hull</strong> save and a <strong>Systems</strong> save.<br><br>If the <strong>Hull</strong> save fails, the Target takes 1d4 Kinetic damage that is considered Armor Piercing (AP).<br>If the <strong>Systems</strong> save fails, the Target takes 2 Heat.",
-                "tech_attack": true,
-                "frequency": "Unlimited"
-            }
-        ]
-    }
+        "type": "Mine",
+        "size": 0.5,
+        "activation": "Quick",
+        "redeploy": "Quick",
+        "cost": 1,
+        "hp": "10",
+        "mech": true
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_neuraxworm",
+    "name": "Neurax Worm",
+    "source": "RTC",
+    "license": "Mechanized Virus",
+    "type": "System",
+    "sp": 3,
+    "description": "Unlike traditional system hacking, the <strong>Neurax Worm</strong> physically launches from the mech and burrows into the Target. This causes physical damage to the mech during this process as it attempts to take over.",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Launch Neurax Worm",
+        "activation": "Full Tech",
+        "detail": "The Target must perform a <strong>Hull</strong> save and a <strong>Systems</strong> save.<br><br>If the <strong>Hull</strong> save fails, the Target takes 1d4 Kinetic damage that is considered Armor Piercing (AP).<br>If the <strong>Systems</strong> save fails, the Target takes 2 Heat.",
+        "tech_attack": true,
+        "frequency": "Unlimited"
+      }
+    ]
+  }
 ]
