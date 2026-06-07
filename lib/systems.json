@@ -56,7 +56,7 @@
       {
         "name": "Launch Stucry",
         "activation": "Full Tech",
-        "details": "Upon success, the Target fires with a random weapon chosen by the GM at a random character within range of said weapon. If there is not a valid Target for any of their weapons, then they fire upon themselves with a random weapon chosen by the GM.",
+        "detail": "Upon success, the Target fires with a random weapon chosen by the GM at a random character within range of said weapon. If there is not a valid Target for any of their weapons, then they fire upon themselves with a random weapon chosen by the GM.",
         "tech_attack": true,
         "frequency": "Unlimited"
       }
@@ -70,13 +70,13 @@
     "license": "Mechanized Virus",
     "license_level": 1,
     "sp": 3,
-    "description": "",
+    "description": "CyWire, a virus meant to cause havoc on a Target mech by rewiring parts of the mech.",
     "tags": [{"id": "tg_unique"}],
     "actions": [
       {
         "name": "Launch CyWire",
         "activation": "Full Tech",
-        "details": "Upon success, you may choose two mech stats of your Target (Hull, Agility, Systems, Engineering). The values of these two stats are swapped until the end of your next turn.<br><br>You cannot use this on a Target already suffering from this attack.",
+        "detail": "Upon success, you may choose two mech stats of your Target (Hull, Agility, Systems, Engineering). The values of these two stats are swapped until the end of your next turn.<br><br>You cannot use this on a Target already suffering from this attack.",
         "tech_attack": true,
         "frequency": "Unlimited"
       }
