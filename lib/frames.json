@@ -8,5 +8,15 @@
     "mechtype": ["Specialty"],
     "specialty": true,
     "traits": [], "mounts": [], "stats": {}, "core_system": {}
+  },
+  {
+    "id": "rce-frames_systemsboosting",
+    "name": "Systems Boosting",
+    "source": "RTC",
+    "license_level": 1,
+    "description": "The <strong>RTC</strong> line of specialized system boosts designed to enhance the systems of the user's mech.",
+    "mechtype": ["Specialty"],
+    "specialty": true,
+    "traits": [], "mounts": [], "stats": {}, "core_system": {}
   }
 ]
