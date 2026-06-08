@@ -91,7 +91,7 @@
     "sp": 2,
     "description": "A simple AI unit designed to react for you to incoming damage.",
     "effect": "You get two types of reactions that each can be used 1/Round: <strong>Ranged Reaction</strong> and <strong>Melee Reaction</strong>.",
-    "tags": [{"id": "tg_uniqe"}, {"id": "tg_ai"}],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_ai"}],
     "actions": [
       {
         "name": "Ranged Reaction",
