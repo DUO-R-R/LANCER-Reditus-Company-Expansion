@@ -31,7 +31,7 @@
     "license_level": 1,
     "sp": 2,
     "description": "Unlike traditional system hacking, the <strong>Neurax Worm</strong> physically launches from the mech and burrows into the Target. This causes physical damage to the mech during this process as it attempts to take over.",
-    "tags": [{"id": "tg_unique"}],
+    "tags": [],
     "actions": [
       {
         "name": "Launch Neurax Worm",
@@ -48,7 +48,7 @@
     "source": "RTC",
     "type": "System",
     "license": "Mechanized Virus",
-    "license_level": 1,
+    "license_level": 2,
     "sp": 2,
     "description": "Stucry, an advanced virus designed to cause the Target's systems to start misbehaving and misfiring.",
     "tags": [{"id": "tg_unique"}],
@@ -56,9 +56,9 @@
       {
         "name": "Launch Stucry",
         "activation": "Full Tech",
-        "detail": "Upon success, the Target fires with a random weapon chosen by the GM at a random character within range of said weapon. If there is not a valid Target for any of their weapons, then they fire upon themselves with a random weapon chosen by the GM.",
+        "frequency": "Unlimited",
         "tech_attack": true,
-        "frequency": "Unlimited"
+        "detail": "Upon success, the Target fires with a random weapon chosen by the GM at a random character within range of said weapon. If there is not a valid Target for any of their weapons, then they fire upon themselves with a random weapon chosen by the GM."
       }
     ]
   },
@@ -68,7 +68,7 @@
     "source": "RTC",
     "type": "System",
     "license": "Mechanized Virus",
-    "license_level": 1,
+    "license_level": 2,
     "sp": 3,
     "description": "CyWire, a virus meant to cause havoc on a Target mech by rewiring parts of the mech.",
     "tags": [{"id": "tg_unique"}],
@@ -76,9 +76,55 @@
       {
         "name": "Launch CyWire",
         "activation": "Full Tech",
-        "detail": "Upon success, you may choose two mech stats of your Target (Hull, Agility, Systems, Engineering). The values of these two stats are swapped until the end of your next turn.<br><br>You cannot use this on a Target already suffering from this attack.",
+        "frequency": "Unlimited",
         "tech_attack": true,
-        "frequency": "Unlimited"
+        "detail": "Upon success, you may choose two mech stats of your Target (Hull, Agility, Systems, Engineering). The values of these two stats are swapped until the end of your next turn.<br><br>You cannot use this on a Target already suffering from this attack."
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_reactivesystems",
+    "name": "Reactive Systems",
+    "source": "RTC",
+    "license": "Systems Boosting",
+    "license_level": 1,
+    "sp": 2,
+    "description": "A simple AI unit designed to react for you to incoming damage.",
+    "effect": "You get two types of reactions that each can be used 1/Round: <strong>Ranged Reaction</strong> and <strong>Melee Reaction</strong>.",
+    "tags": [{"id": "tg_uniqe"}, {"id": "tg_ai"}],
+    "actions": [
+      {
+        "name": "Ranged Reaction",
+        "activation": "Reaction",
+        "frequency": "1/Round",
+        "detail": "Roll a 1d6. On 5+, you move to an adjacent unoccupied space and the attack effectively misses.<br>This must be taken before the attack roll is made.",
+        "trigger": "An enemy attempts a ranged attack on you."
+      },
+      {
+        "name": "Melee Reaction",
+        "activation" : "Reaction",
+        "frequency": "1/Round",
+        "detail": "Roll a 1d6. On a 5+, you move to an adjance unoccupied space and the attack effectively misses.<br>This must be taken before the attack roll is made.",
+        "trigger": "An enemy attempts a melee attack on you."
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_weaponhandover",
+    "name": "Weapon Hand Over",
+    "source": "RTC",
+    "license": "Systems Boosting",
+    "license_level": 2,
+    "sp": 3,
+    "description": "A specialized boost targeting the NHPs of your current mech.",
+    "effect": "1/Scene, you hand over control of one of your mech's weapons to an NHP of your mech. For the rest of the scene on your turn, you may attack with this weapon once as a free action without any bonuses.<br>However, any systems or actions relating to the NHP can no longer be used including protocols and mech talents and/or effects. This NHP can still cascade as well.<br><br>This ends once the Scene end.",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Hand Over Weapon",
+        "activation": "Full Action",
+        "frequency": "1/Scene",
+        "detail": "Hand over control of one of your mech's weapons to an NHP of your mech. For the rest of the scene on your turn, you may attack with this weapon once as a free action without any bonuses.<br>However, any systems or actions relating to the NHP can no longer be used including protocols and mech talents and/or effects. This NHP can still cascade as well.<br><br>This ends once the Scene end."
       }
     ]
   }
