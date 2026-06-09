@@ -1,19 +1,25 @@
 [
   {
-    "id": "rge-tags_bleed",
+    "id": "rce-tags_bleed",
     "name": "Bleed",
     "description": "This weapon applies the <strong>Bleed</strong> status effect to its victim."
   },
   {
-    "id": "rge-tags_clearance",
+    "id": "rce-tags_clearance",
     "name": "Clearance {VAL}",
     "description": "This gear requires the pilot to be at the specified License Level of {VAL} or above to use.<br><br>This acts as a recommendation to restrict items for specific levels of play.",
     "val": 3
   },
   {
-    "id": "rge-tags_charges",
+    "id": "rce-tags_charges",
     "name": "Charges {VAL}",
     "description": "This weapon has {VAL} charge(s) that are expended upon firing. Each charge can be reloaded via a quick action unless otherwise specified. A weapon that has this tag and no charges left cannot fire. Unless otherwise specified, one charge is expelled per fire.<br><br>The amount of charges is further increased by the Pilot's Engineering level halved, rounded down.",
     "val": 3
+  },
+  {
+    "id": "rce-tags_compatibility",
+    "name": "Compatibility: {VAL}",
+    "description": "This can be installed into mech frames designed by the following manufacturer(s): {VAL}.<br><br>Systems, weapons, etc., with this tag can only be installed into mechs designed by the corresponding manufacturer(s).",
+    "val": "GMS"
   }
 ]

@@ -2,11 +2,30 @@
     "name": "Reditus Company Expansion",
     "author": "DUO R&R",
     "item_prefix": "rce",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "The Reditus Company Expansion offers a variety of new gear, weapons, and more for use in campaigns offered by the Reditus Technology Corporation (RTC) in addition to more general gear.",
     "website": "https://duo-rr.itch.io/lancer-reditus-company-expansion",
     "image_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png",
     "version_history": [
+      {
+        "version": "0.1.4",
+        "date": "2026-06-08",
+        "changes" : [
+          "Added Weapons json.",
+          "Added Frames json.",
+          "Added new Frame 'Mechanized Virus'",
+          "Added new Frame 'Systems Boosting'.",
+          "Added new Frame 'Mechaswords'.",
+          "Added new System 'Neurax Worm'.",
+          "Added new System 'Stucry'.",
+          "Added new System 'CyWire'.",
+          "Added new System 'Reactive Systems'.",
+          "Added new System 'Weapon Hand Over'.",
+          "Added new Weapon 'Kinetic Broadsword'.",
+          "Added new Weapon 'Smart Sword'.",
+          "Added new Weapon 'Relidag'."
+        ]
+      },
       {
         "version": "0.1.3",
         "date": "2026-06-04",
@@ -30,7 +49,7 @@
         ]
       },
       {
-        "version": "0.1.1.",
+        "version": "0.1.1",
         "date": "2026-05-30",
         "changes": [
             "Added Image in Manifest to display.",
