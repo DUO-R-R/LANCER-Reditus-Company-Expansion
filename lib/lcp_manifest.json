@@ -2,11 +2,17 @@
     "name": "Reditus Company Expansion",
     "author": "DUO R&R",
     "item_prefix": "rce",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "description": "The Reditus Company Expansion offers a variety of new gear, weapons, and more for use in campaigns offered by the Reditus Technology Corporation (RTC) in addition to more general gear.",
     "website": "https://duo-rr.itch.io/lancer-reditus-company-expansion",
     "image_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png",
     "version_history": [
+      {
+          "version": "0.2.0",
+          "date": "2026-06-08",
+          "changes": [
+          ]
+      }
       {
         "version": "0.1.4",
         "date": "2026-06-08",
@@ -57,11 +63,6 @@
             "Fixed C4 size value, changed to 0.5 instead of null.",
             "Added 'Clearance' tag to Mobility Hardsuit Mk.III"
         ]
-      },
-      {
-        "version": "0.1.0",
-        "date": "2026-05-28",
-        "changes" : []
       }
   ],
     "v3": true
