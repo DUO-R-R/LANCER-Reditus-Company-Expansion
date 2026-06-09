@@ -18,5 +18,15 @@
     "mechtype": ["Specialty"],
     "specialty": true,
     "traits": [], "mounts": [], "stats": {}, "core_system": {}
+  },
+  {
+    "id": "rce-frames_mechaswords",
+    "name": "Mechaswords",
+    "source": "RTC",
+    "license_level": 1,
+    "description": "The <strong>RTC's</strong> response to what swords for mechs would be.",
+    "mechtype": ["Specialty"],
+    "specialty": true,
+    "traits": [], "mounts": [], "stats": {}, "core_system": {}
   }
 ]
