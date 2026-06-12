@@ -227,15 +227,21 @@
         "detail": "Activate or deactivate the cloak of the suit to allow the user to be invisible. However, while the cloak is active, any holograms will automatically be recalled.<br>The cloak will immediately deactivate when the user takes damage.",
         "pilot": true,
         "frequency": "Unlimited"
+      },
+      {
+        "name": "Activate Hologram",
+        "activation": "Reaction",
+        "detail": "Activate the hologram of the suit, placing placing down a small hologram of the user the hologram is assigned to.<br>Any Hostile characters within the Sensor Range of the hologram (20) must target the hologram instead of the original user.<br><br>Only one hologram can be active at any time.",
+        "pilot": "true",
+        "frequency": "Unlimited"
       }
     ],
     "deployables": [
       {
         "name": "User Hologram",
         "type": "Hologram",
-        "detail": "A small hologram of the user the hologram is assigned to.<br><br>Any hostile characters within the Sensor Range must target this hologram instead of the original user.",
+        "detail": "A small hologram of the user the hologram is assigned to.<br>Any hostile characters within the Sensor Range (20) must target this hologram instead of the original user.<br><br>Only one hologram can be active at any time.",
         "size": 0.5,
-        "activation": "Reaction",
         "deactivation": "Quick",
         "cost": 1,
         "hp": "10",
