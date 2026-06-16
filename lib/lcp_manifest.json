@@ -12,7 +12,6 @@
           "date": "2026-06-16",
           "changes": [
               "Added Reaction to Actions in Hologram Suit to activate the suit's Hologram.",
-              "Removed Reaction activation from the deployable in Hologram Suit."
           ]
       },
       {
