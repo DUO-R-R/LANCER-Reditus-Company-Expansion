@@ -2,11 +2,18 @@
     "name": "Reditus Company Expansion",
     "author": "DUO R&R",
     "item_prefix": "rce",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "The Reditus Company Expansion offers a variety of new gear, weapons, and more for use in campaigns offered by the Reditus Technology Corporation (RTC) in addition to more general gear.",
     "website": "https://duo-rr.itch.io/lancer-reditus-company-expansion",
     "image_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png",
     "version_history": [
+      {
+          "version": "0.2.1",
+          "date": "2026-06-16",
+          "changes": [
+              "Added Reaction to Actions in Hologram Suit to activate the suit's Hologram."
+          ]
+      },
       {
           "version": "0.2.0",
           "date": "2026-06-08",
@@ -52,16 +59,6 @@
             "Fixed duplicate gear IDs.",
             "Fixed values for some gear IDs.",
             "Fixed descriptions for gear pieces."
-        ]
-      },
-      {
-        "version": "0.1.1",
-        "date": "2026-05-30",
-        "changes": [
-            "Added Image in Manifest to display.",
-            "Removed unnecessary <span> tag in descriptions.",
-            "Fixed C4 size value, changed to 0.5 instead of null.",
-            "Added 'Clearance' tag to Mobility Hardsuit Mk.III"
         ]
       }
   ],
