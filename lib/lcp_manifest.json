@@ -14,7 +14,7 @@
               "Added Reaction to Actions in Hologram Suit to activate the suit's Hologram.",
               "Removed Reaction activation from the deployable in Hologram Suit."
           ]
-      }
+      },
       {
           "version": "0.2.0",
           "date": "2026-06-08",
@@ -60,16 +60,6 @@
             "Fixed duplicate gear IDs.",
             "Fixed values for some gear IDs.",
             "Fixed descriptions for gear pieces."
-        ]
-      },
-      {
-        "version": "0.1.1",
-        "date": "2026-05-30",
-        "changes": [
-            "Added Image in Manifest to display.",
-            "Removed unnecessary <span> tag in descriptions.",
-            "Fixed C4 size value, changed to 0.5 instead of null.",
-            "Added 'Clearance' tag to Mobility Hardsuit Mk.III"
         ]
       }
   ],
