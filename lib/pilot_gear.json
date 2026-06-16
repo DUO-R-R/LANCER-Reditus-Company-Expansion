@@ -242,6 +242,7 @@
         "type": "Hologram",
         "detail": "A small hologram of the user the hologram is assigned to.<br>Any hostile characters within the Sensor Range (20) must target this hologram instead of the original user.<br><br>Only one hologram can be active at any time.",
         "size": 0.5,
+        "activation": "Reaction",
         "deactivation": "Quick",
         "cost": 1,
         "hp": "10",
