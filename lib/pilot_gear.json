@@ -10,9 +10,9 @@
         "name": "Activate Chronotardus Cybernetic Implant",
         "activation": "Reaction",
         "detail": "Reroll the failed time-based skill check from the user, the new roll must be kept.",
+        "trigger": "A time-based skill check from the user fails.",
         "pilot": true,
-        "frequency": "Unlimited",
-        "trigger": "A time-based skill check from the user fails."
+        "frequency": "Unlimited"
       }
     ]
   },
@@ -146,7 +146,7 @@
     "id": "rce-pilotgear_gear_mechalenzcyberneticimplant",
     "name": "Mechalenz Cybernetic Implant",
     "type": "Gear",
-    "description": "A cybernetic implant designed to replace one or both eyes of a user to increase the distance at which the user can make out detail, give heat vision, and give night vision."
+    "description": "A cybernetic implant designed to replace one or both eyes of a user to increase the distance at which the user can make out detail, and additionally give both heat and night vision."
   },
   {
     "id": "rce-pilotgear_gear_regenativeskinbiomodification",
@@ -168,7 +168,7 @@
     "id": "rce-pilotgear_gear_nanimmunocyberneticimplant",
     "name": "Nanimmuno Cybernetic Implant",
     "type": "Gear",
-    "description": "A cybernetic implant designed to aid in the user's immune response. Whenever the implant detects the body's natural immune response responding to a foreign object, the implant floods the body with nanites that follow the response to the foreign objects and work with the body to eliminate the threat, effectively making the user fully immune to all known and unknown diseases so long as the swarm is able to be deployed.<br><br>Without the swarm, the body has to rely solely on its own response, though immunity is still developed to any diseases fought off with the swarm."
+    "description": "A cybernetic implant designed to aid in the user's immune response. Whenever the implant detects the body's natural immune response responding to a foreign object, the implant floods the body with nanites that follow the response to the foreign object and work with the body to eliminate the threat. This effectively makes the user fully immune to all known and unknown diseases so long as the swarm is able to be deployed.<br><br>Without the swarm, the body has to rely solely on its own response, though immunity is still developed to any diseases fought off with the swarm."
   },
   {
     "id": "rce-pilotgear_gear_regenateloproteinbiomodification",
@@ -232,6 +232,7 @@
         "name": "Activate Hologram",
         "activation": "Reaction",
         "detail": "Activate the hologram of the suit, placing placing down a small hologram of the user the hologram is assigned to.<br>Any Hostile characters within the Sensor Range of the hologram (20) must target the hologram instead of the original user.<br><br>Only one hologram can be active at any time.",
+        "trigger": "An attack hits you.",
         "pilot": "true",
         "frequency": "Unlimited"
       }
@@ -279,9 +280,9 @@
         "name": "Extinguish Flames",
         "activation": "Reaction",
         "detail": "The damage is halved, rounded down; additionally the damage is treated as Kinetic.",
+        "trigger": "User takes any Heat or Burn damage.",
         "pilot": true,
-        "frequency": "Unlimited",
-        "trigger": "User takes any Heat or Burn damage."
+        "frequency": "Unlimited"
       }
     ]
   },
