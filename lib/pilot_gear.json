@@ -280,7 +280,7 @@
         "name": "Extinguish Flames",
         "activation": "Reaction",
         "detail": "The damage is halved, rounded down; additionally the damage is treated as Kinetic.",
-        "trigger": "User takes any Heat or Burn damage."
+        "trigger": "User takes any Heat or Burn damage.",
         "pilot": true,
         "frequency": "Unlimited"
       }
