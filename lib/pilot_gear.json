@@ -10,7 +10,7 @@
         "name": "Activate Chronotardus Cybernetic Implant",
         "activation": "Reaction",
         "detail": "Reroll the failed time-based skill check from the user, the new roll must be kept.",
-        "trigger": "A time-based skill check from the user fails."
+        "trigger": "A time-based skill check from the user fails.",
         "pilot": true,
         "frequency": "Unlimited"
       }
