@@ -10,9 +10,9 @@
         "name": "Activate Chronotardus Cybernetic Implant",
         "activation": "Reaction",
         "detail": "Reroll the failed time-based skill check from the user, the new roll must be kept.",
-        "pilot": true,
-        "frequency": "Unlimited",
         "trigger": "A time-based skill check from the user fails."
+        "pilot": true,
+        "frequency": "Unlimited"
       }
     ]
   },
@@ -282,7 +282,7 @@
         "detail": "The damage is halved, rounded down; additionally the damage is treated as Kinetic.",
         "trigger": "User takes any Heat or Burn damage."
         "pilot": true,
-        "frequency": "Unlimited",
+        "frequency": "Unlimited"
       }
     ]
   },
