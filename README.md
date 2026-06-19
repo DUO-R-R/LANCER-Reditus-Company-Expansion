@@ -2,6 +2,10 @@
 <br>
 <br>
 <br>
+<div align="center">
+	
+[![DUO R&R](https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png)](https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png)
+</div>
 
 ## About (Lore)
 Reditus Technology Corporation (RTC) is a recently-established megacorporation with a focus on inventing new technology and innovating new technological advancements for the betterment of humanity. Their products are designed for general use amongst the population, whether they be Union or not.
