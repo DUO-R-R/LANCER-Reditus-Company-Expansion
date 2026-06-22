@@ -8,7 +8,7 @@
     "sp": "0",
     "description": "",
     "effect": "3/Scene, you can deploy a mine anywhere within Sensor range.<br><br>Whenever a hostile character gets within Burst 2, the mine explodes.<br>This will leave behind a Burst 2 cloud that whenever a biological character comes within, they gain the <strong>Pathoparalysis</strong> Status.",
-    "tags": [{"id": "tg_quick_action"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "deployables": [
       {
         "name": "Pathoparalysis Mine",
