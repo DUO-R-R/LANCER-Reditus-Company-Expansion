@@ -127,5 +127,118 @@
         "detail": "Hand over control of one of your mech's weapons to an NHP of your mech. For the rest of the scene on your turn, you may attack with this weapon once as a free action without any bonuses.<br>However, any systems or actions relating to the NHP can no longer be used including protocols and mech talents and/or effects. This NHP can still cascade as well.<br><br>This ends once the Scene end."
       }
     ]
+  },
+  {
+    "id": "rce-systems_movinull",
+    "name": "Movinull",
+    "source": "RTC",
+    "license": "Mechanized Virus",
+    "license_level": 2,
+    "sp": 2,
+    "description": "A simple virus designed to sabotage the movement systems on a target mech.",
+    "effect": "1/Round, you may select a Target for this. Your Target must make a Systems save. Upon failure, they become Immobilized until the end of their next turn. Upon success, they become Slowed until the end of their next turn.",
+    "tags": [],
+    "actions": [
+      {
+        "name": "Launch Movinull",
+        "activation": "Quick Tech",
+        "frequency": "1/Round",
+        "detail": "Your Target must make a Systems save. Upon failure, they become Immobilized until the end of their next turn. Upon success, they become Slowed until the end of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_lockwave",
+    "name": "Lock Wave",
+    "source": "RTC",
+    "license": "Mechanized Virus",
+    "license_level": 3,
+    "sp": 3,
+    "description": "An advanced virus meant to expose targets, making them easier to target.",
+    "effect": "1/Scene, you can emit a wave from your mech to force a lock on to all enemy mechs within Sensors range.",
+    "tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
+    "actions": [
+      {
+        "name": "Launch Lock Wave",
+        "activation": "Full Tech",
+        "frequency": "1/Scene",
+        "detail": "Emit a wave from your mech to force a lock on to all enemy mechs within Sensors range."
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_cessamech",
+    "name": "Cessamech",
+    "source": "RTC",
+    "license": "Mechanized Virus",
+    "license_level": 3,
+    "sp": 2,
+    "description": "An advanced virus that can force a mech to shut down.",
+    "effect": "1/Round, you may select a Target for this. Your Target must make a Systems save. Upon failure, they must roll 3d6. If they roll a 1 on any die, their mech is forced to Shut Down, otherwise, they become Immobilized.<br><br>You may force one of these effects like this on each character only once per scene.",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Launch Cessamech",
+        "activation": "Full Tech",
+        "frequency": "1/Round",
+        "detail": "Your Target must make a Systems save. Upon failure, they must roll 3d6. If they roll a 1 on any die, their mech is forced to Shut Down, otherwise, they become Immobilized.<br><br>You may force one of these effects like this on each character only once per scene."
+      }
+    ]
+  },
+  {
+    "id": "rce-systems_sensibility",
+    "name": "Sensibility",
+    "source": "RTC",
+    "license": "Systems Boosting",
+    "license_level": 1,
+    "sp": 1,
+    "description": "A simple systems module to give a boost to a mech's sensors.",
+    "effect": "Gain an additional 5 Sensor range.",
+    "tags": [{"id": "tg_unique"}],
+    "bonuses": [{"id": "sensor", "val": 5}]
+  },
+  {
+    "id": "rce-systems_electronichardening",
+    "name": "Electronic Hardening",
+    "source": "RTC",
+    "license": "Systems Boosting",
+    "license_level": 2,
+    "sp": 1,
+    "description": "A slightly more advanced systems module to give a boost to a mech's electronical defenses.",
+    "effect": "Gain an additional 3 E-Defense.",
+    "tags": [{"id": "tg_unique"}],
+    "bonuses": [{"id": "edef", "val": 3}]
+  },
+  {
+    "id": "rce-systems_hackboost",
+    "name": "Hack Boost",
+    "source": "RTC",
+    "license": "Systems Boosting",
+    "license_level": 2,
+    "sp": 1,
+    "description": "A slightly more advanced systems module to give a boost to a mech's hacking capabilities.",
+    "effect": "Gain an additional 3 Tech Attack.",
+    "tags": [{"id": "tg_unique"}],
+    "bonuses": [{"id": "tech", "val": 3}]
+  },
+  {
+    "id": "rce-systems_flashfeet",
+    "name": "Flash Feet",
+    "source": "RTC",
+    "license": "Systems Boosting",
+    "license_level": 3,
+    "sp": 2,
+    "description": "A module allowing for insane movement at the cost of damaging one's reactor.",
+    "effect": "3/Scene, you may select a Target for this within Sensor range. You must roll an Overcharge roll and subsequently immediately teleport to an unoccupied adjacent space to your Target. After this, the effects of the Overcharge roll kick in, additionally you become Immobilized until the end of your next turn.",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Flash Feet",
+        "activation": "Full Tech",
+        "frequency": "3/Scene",
+        "detail": "Select a Target for this within Sensor range. You must roll an Overcharge roll and subsequently immediately teleport to an unoccupied adjacent space to your Target. After this, the effects of the Overcharge roll kick in, additionally you become Immobilized until the end of your next turn."
+      }
+    ]
   }
+]
 ]
