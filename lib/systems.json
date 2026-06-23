@@ -219,7 +219,7 @@
     "description": "A slightly more advanced systems module designed to give a boost to a mech's hacking capabilities.",
     "effect": "Gain an additional 3 Tech Attack.",
     "tags": [{"id": "tg_unique"}],
-    "bonuses": [{"id": "tech", "val": 3}]
+    "bonuses": [{"id": "tech_attack", "val": 3}]
   },
   {
     "id": "rce-systems_flashfeet",
