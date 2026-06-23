@@ -7,7 +7,7 @@
     "license_level": 1,
     "sp": "0",
     "description": "",
-    "effect": "3/Scene, you can deploy a mine anywhere within Sensor range.<br><br>Whenever a hostile character gets within Burst 2, the mine explodes.<br>This will leave behind a Burst 2 cloud that whenever a biological character comes within, they gain the <strong>Pathoparalysis</strong> Status.",
+    "effect": "3/Scene, you can deploy a pathoparalysis mine anywhere within Sensor range.<br><br>Whenever a hostile character enters within Burst 2, the mine explodes.<br>This will leave behind a Burst 2 cloud that whenever a biological character enters or starts their turn within, they gain the <strong>Pathoparalysis</strong> status.",
     "tags": [{"id": "tg_unique"}],
     "deployables": [
       {
@@ -104,7 +104,7 @@
         "name": "Melee Reaction",
         "activation" : "Reaction",
         "frequency": "1/Round",
-        "detail": "Roll a 1d6. On a 5+, you move to an adjance unoccupied space and the attack effectively misses.<br>This must be taken before the attack roll is made.",
+        "detail": "Roll a 1d6. On a 5+, you move to an adjacent unoccupied space and the attack effectively misses.<br>This must be taken before the attack roll is made.",
         "trigger": "An enemy attempts a melee attack on you."
       }
     ]
@@ -155,14 +155,14 @@
     "license_level": 3,
     "sp": 3,
     "description": "An advanced virus meant to expose targets, making them easier to target.",
-    "effect": "1/Scene, you can emit a wave from your mech to force a lock on to all enemy mechs within Sensors range.",
+    "effect": "1/Scene, you can emit a wave from your mech to force a lock on to all enemy mechs within Sensor range.",
     "tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
     "actions": [
       {
         "name": "Launch Lock Wave",
         "activation": "Full Tech",
         "frequency": "1/Scene",
-        "detail": "Emit a wave from your mech to force a lock on to all enemy mechs within Sensors range."
+        "detail": "Emit a wave from your mech to force a lock on to all enemy mechs within Sensor range."
       }
     ]
   },
@@ -181,7 +181,7 @@
         "name": "Launch Cessamech",
         "activation": "Full Tech",
         "frequency": "1/Round",
-        "detail": "Your Target must make a Systems save. Upon failure, they must roll 3d6. If they roll a 1 on any die, their mech is forced to Shut Down, otherwise, they become Immobilized.<br><br>You may force one of these effects like this on each character only once per scene."
+        "detail": "Your Target must make a Systems save. Upon failure, they must roll 3d6. If they roll a 1 on any die, their mech is forced to Shut Down, otherwise, they become Immobilized.<br><br>A character may only be affected by this once per scene."
       }
     ]
   },
@@ -192,7 +192,7 @@
     "license": "Systems Boosting",
     "license_level": 1,
     "sp": 1,
-    "description": "A simple systems module to give a boost to a mech's sensors.",
+    "description": "A simple systems module designed to give a boost to a mech's sensors.",
     "effect": "Gain an additional 5 Sensor range.",
     "tags": [{"id": "tg_unique"}],
     "bonuses": [{"id": "sensor", "val": 5}]
@@ -204,7 +204,7 @@
     "license": "Systems Boosting",
     "license_level": 2,
     "sp": 1,
-    "description": "A slightly more advanced systems module to give a boost to a mech's electronical defenses.",
+    "description": "A slightly more advanced systems module designed to give a boost to a mech's electronical defenses.",
     "effect": "Gain an additional 3 E-Defense.",
     "tags": [{"id": "tg_unique"}],
     "bonuses": [{"id": "edef", "val": 3}]
@@ -216,7 +216,7 @@
     "license": "Systems Boosting",
     "license_level": 2,
     "sp": 1,
-    "description": "A slightly more advanced systems module to give a boost to a mech's hacking capabilities.",
+    "description": "A slightly more advanced systems module designed to give a boost to a mech's hacking capabilities.",
     "effect": "Gain an additional 3 Tech Attack.",
     "tags": [{"id": "tg_unique"}],
     "bonuses": [{"id": "tech", "val": 3}]
@@ -229,14 +229,14 @@
     "license_level": 3,
     "sp": 2,
     "description": "A module allowing for insane movement at the cost of damaging one's reactor.",
-    "effect": "3/Scene, you may select a Target for this within Sensor range. You must roll an Overcharge roll and subsequently immediately teleport to an unoccupied adjacent space to your Target. After this, the effects of the Overcharge roll kick in, additionally you become Immobilized until the end of your next turn.",
+    "effect": "3/Scene, you may select a Target for this within Sensor range. You must make an Overcharge roll and subsequently immediately teleport to an unoccupied adjacent space to your Target. After this, the effects of the Overcharge roll kick in, additionally you become Immobilized until the end of your next turn.",
     "tags": [{"id": "tg_unique"}],
     "actions": [
       {
         "name": "Flash Feet",
         "activation": "Full Tech",
         "frequency": "3/Scene",
-        "detail": "Select a Target for this within Sensor range. You must roll an Overcharge roll and subsequently immediately teleport to an unoccupied adjacent space to your Target. After this, the effects of the Overcharge roll kick in, additionally you become Immobilized until the end of your next turn."
+        "detail": "Select a Target for this within Sensor range. You must roll an Overcharge roll and subsequently immediately teleport to an unoccupied adjacent space to your Target. After this, the effects of the Overcharge roll kick in; additionally you become Immobilized until the end of your next turn."
       }
     ]
   }
