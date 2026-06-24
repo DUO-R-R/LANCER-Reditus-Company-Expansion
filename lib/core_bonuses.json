@@ -1,0 +1,58 @@
+[
+    {
+    "id": "rce-corebonus_accuratehandling",
+    "name": "Accurate Handling",
+    "source": "RTC",
+    "effect": "You gain +1 Accuracy to all Ranged attacks.",
+    "description": "An improvement to your mech's ability to handle ranged weapons allows it to have a better chance at hitting targets.",
+    "bonuses": [{"id": "range", "accuracy": 1, "weapon_types": ["Rifle","Cannon","Launcher","CQB","Nexus"]}]
+  },
+  {
+    "id": "rce-corebonus_highprioritysystems",
+    "name": "High Priority Systems",
+    "source": "RTC",
+    "effect": "You gain +5 SP at the cost of -1 Stress.",
+    "description": "<strong>RTC</strong> has developed a way to allow for more systems to be installed into mechs at the cost of reactor stability.",
+    "bonuses": [{"id": "stress", "val": -1}, {"id": "sp", "val": 5}]
+  },
+  {
+    "id": "rce-corebonus_improvedsystemsaccuracy",
+    "name": "Improved Systems Accuracy",
+    "source": "RTC",
+    "effect": "You gain +1 Accuracy on all Engineering and Systems checks and saves.",
+    "description": "An improvement to your mech's internals gives it a greater chance in certain situations.",
+    "bonuses": [{"id": "systems", "accuracy": 1}, {"id": "engineering", "accuracy": 1}]
+  },
+  {
+    "id": "rce-corebonus_prototypereactor",
+    "name": "Prototype Reactor",
+    "source": "RTC",
+    "effect": "You gain +5 Heat Cap and the cost for Overcharge is always 1d6 Heat.",
+    "description": "A prototype reactor designed with the hope to handle heat more efficiently.",
+    "bonuses": [{"id": "heatcap", "val": 5}, {"id": "overcharge", "val": ["1d6", "1d6", "1d6", "1d6"]}]
+  },
+  {
+    "id": "rce-corebonus_prototypesensors",
+    "name": "Prototype Sensors",
+    "source": "RTC",
+    "effect": "You may choose to roll 4d6 upon entering a Scene, however, your base Sensor range is replaced by this value until the end of the Scene.",
+    "description": "New prototype mech sensors being developed by <strong>RTC</strong>. They have great potential but are not always reliable.",
+    "actions": [
+      {
+        "name": "Activate Prototype Sensors",
+        "activation": "None",
+        "frequency": "1/Scene",
+        "trigger": "You enter a scene.",
+        "detail": "You may roll a 4d6, your base Sensor range is replaced by the result until the end of the Scene."
+      }
+    ]
+  },
+  {
+    "id": "rce-corebonus_redundantsensorysystems",
+    "name": "Redundant Sensory Systems",
+    "source": "RTC",
+    "effect": "You gain Immunity to Impaired and Jammed.",
+    "description": "Your mech now comes with backup communication and sensory systems in the case primaries fail.",
+    "bonuses": [{"id": "immunity", "val": ["impaired", "jammed"]}]
+  }
+]

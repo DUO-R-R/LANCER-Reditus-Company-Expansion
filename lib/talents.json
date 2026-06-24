@@ -4,6 +4,7 @@
     "name": "Cyberoptic",
     "terse": "Its time for true improvements to your mech's optical and range-based systems.",
     "description": "Improving a mech's systems relating to sensors and optics are important for battlefield awareness and hacking capabilities. Improving them can help give a massive boost to a mech's capabilities at longer ranges as well as making an already deadly mech even more so.",
+    "icon_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/reditus-company-expansion/images/tokenicons/cyberoptic.png",
     "ranks": [
       {
         "name": "Visionary",
@@ -54,6 +55,7 @@
     "name": "Bio-Freak",
     "terse": "Biology is amazing, and harnessing it can be just as deadly as mechanized warfare.",
     "description": "Biological warfare can be just as deadly as mechanized warfare, and at times, even deadlier. It is time you harnessed the power of biology to show people that while they may be part cyber, they are still biological.",
+    "icon_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/reditus-company-expansion/images/tokenicons/biofreak.png",
     "ranks": [
       {
         "name": "Biocripple",
@@ -111,6 +113,7 @@
     "name": "Cruelty",
     "terse": "In this galaxy, it is those who are cruel that survive the longest.",
     "description": "Your cruelty knows no limits, morality is out of the question. All that matters is that you survive. Showcase your cruelty so that no one may question whether or not your life is worth it.",
+    "icon_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/reditus-company-expansion/images/tokenicons/cruelty.png",
     "ranks": [
       {
         "name": "Callous ",
@@ -160,6 +163,7 @@
     "name": "Exetechnocrat",
     "terse": "Your expertise with technology surpasses most, rather than be selfish though, you learned that helping others is the best way to survive.",
     "description": "Your expertise with technology is among the best and others will recognize this. You have learned ways to remotely improve the systems of friends, helping others out of situations. If they survive, your odds of survival go up as well.",
+    "icon_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/reditus-company-expansion/images/tokenicons/exetechnocrat.png",
     "ranks": [
       {
         "name": "Selfless Coolant Expert",
@@ -210,6 +214,7 @@
     "name": "Autotechnocrat",
     "terse": "Your expertise with technology surpasses most, but you know that being too selfless leaves you exposed.",
     "description": "Your expertise with technology is among the best and others will recognize this. You have learned ways to better your mech's systems on the fly to adapt to situations as needed. You know that sometimes the best are the ones that survive.",
+    "icon_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/reditus-company-expansion/images/tokenicons/autotechnocrat.png",
     "ranks": [
       {
         "name": "Coolant Expert",
