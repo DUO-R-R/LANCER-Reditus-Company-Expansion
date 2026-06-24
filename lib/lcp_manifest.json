@@ -2,11 +2,42 @@
     "name": "Reditus Company Expansion",
     "author": "DUO R&R",
     "item_prefix": "rce",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "description": "The Reditus Company Expansion offers a variety of new gear, weapons, and more for use in campaigns offered by the Reditus Technology Corporation (RTC) in addition to more general gear.",
     "website": "https://duo-rr.itch.io/lancer-reditus-company-expansion",
     "image_url": "https://raw.githubusercontent.com/DUO-R-R/Project-Images/refs/heads/main/RTC.png",
     "version_history": [
+      {
+        "version": "0.3.0",
+        "date": "2026-06-23",
+        "changes": [
+            "Added Core Bonuses json.",
+            "Added new Core Bonus 'Accurate Handling'.",
+            "Added new Core Bonus 'High Priority Systems'.",
+            "Added new Core Bonus 'Improved Systems Accuracy'.",
+            "Added new Core Bonus 'Prototype Sensors'.",
+            "Added new Core Bonus 'Prototype Reactor'.",
+            "Added new Core Bonus 'Redundant Sensory Systems'.",
+            "Added new Weapon 'Mountain Blade'.",
+            "Added new Weapon 'Electrical Whip'.",
+            "Added new Weapon 'Hurricane Blade'.",
+            "Added new Weapon 'Hammer Axe'.",
+            "Added new Weapon 'Protokana'.",
+            "Added new System 'Movinull'.",
+            "Added new System 'Lock Wave'.",
+            "Added new System 'Cessamech'.",
+            "Added new System 'Sensibility'.",
+            "Added new System 'Electronic Hardening'.",
+            "Added new System 'Hack Boost'.",
+            "Added new System 'Flash Feet'.",
+            "Added icon for Talent 'Autotechnocrat'.",
+            "Added icon for Talent 'Exetechnocrat'.",
+            "Added icon for Talent 'Bio-Freak'.",
+            "Added icon for Talent 'Cruelty'.",
+            "Added icon for Talent 'Cyberoptic'.",
+            "Removed unnecessary tag on 'Pathoparalysis Mine'."
+        ]
+      },
       {
           "version": "0.2.2",
           "date": "2026-06-18",
@@ -56,18 +87,6 @@
             "Minor alteration to the description on the 'Explosive Crossbow' gear.",
             "Corrected item descriptions for model numbering.",
             "Removed unnecessary key-value pairs."
-        ]
-      },
-      {
-        "version": "0.1.2",
-        "date": "2026-06-03",
-        "changes": [
-            "Changed 'Bust' to the proper 'Burst' in effect for Pathoparalysis Mine.",
-            "Corrected spelling of Thread to Threat for 'Threat Reduction' invade option for the 'Sensicrack' tier in the 'Autotechnocrat' talent.",
-            "Fixed some typos.",
-            "Fixed duplicate gear IDs.",
-            "Fixed values for some gear IDs.",
-            "Fixed descriptions for gear pieces."
         ]
       }
   ],
